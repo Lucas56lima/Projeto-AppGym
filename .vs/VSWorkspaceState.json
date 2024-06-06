@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AppGym"
+    "\\AppGym",
+    "\\Infrastructure",
+    "\\Infrastructure\\Migrations"
   ],
   "SelectedNode": "\\AppGym.sln",
   "PreviewInSolutionExplorer": false

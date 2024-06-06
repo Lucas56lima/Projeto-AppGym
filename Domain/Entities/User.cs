@@ -13,12 +13,13 @@ namespace Domain.Entities
         public required string Password{get;set;}
         public required string Fone {get;set;}
         public DateTime Birthday {get;set;}
-        public string? SpecialCondition {get;set;}
+        public string SpecialCondition {get;set;}
         public required string Plan {get;set;}
         public DateTime AccessionDate {get;set;}
-
         public int PaymentId {get;set;}
-        public bool Active {get;set;} = true;
+        public bool Active = true;
+
+        public string DateFormated => Birthday.ToString("dd-MM-yyyy");
                       
     }
 }

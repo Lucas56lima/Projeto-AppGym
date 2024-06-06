@@ -8,8 +8,9 @@ namespace Domain.Interface
 {
     public interface IUserRepository   
     {
-         Task <User>GetByIdAsync(int id);
-        Task<IEnumerable<User>> GetAllAsync();
-        Task PostUserAsync(User user); 
+        Task<User> GetUserByIdAsync(int id);
+        Task<IEnumerable<User>> GetAllUsersAsync();
+        Task <User>PostUserAsync(User user);
+        Task<User> GetByEmailAsync(string email);
     }
 }

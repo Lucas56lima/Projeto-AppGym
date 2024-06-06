@@ -22,11 +22,12 @@ if (string.IsNullOrWhiteSpace(connectionString))
 }
 
 builder.Services.AddDbContext<AppGymContextDb>(options =>
-    options.UseSqlite(connectionString));
-    
+    options.UseSqlite(connectionString));    
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
+builder.Services.AddScoped<IWorkoutService, WorkoutService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

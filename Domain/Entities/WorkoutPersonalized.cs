@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Timers;
-
 namespace Domain.Entities
 {
     public class WorkoutPersonalized
@@ -19,6 +13,5 @@ namespace Domain.Entities
         public required int Time{get; set;}
         public required int WorkoutId { get; set; }
         public bool Active {get;set;} = true;
-
     }
 }

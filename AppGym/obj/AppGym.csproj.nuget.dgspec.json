@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\AppGym\\AppGym.csproj": {}
+    "C:\\Users\\Usuário\\Downloads\\AppGym\\AppGym\\AppGym.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\AppGym\\AppGym.csproj": {
+    "C:\\Users\\Usuário\\Downloads\\AppGym\\AppGym\\AppGym.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\AppGym\\AppGym.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Downloads\\AppGym\\AppGym\\AppGym.csproj",
         "projectName": "AppGym",
-        "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\AppGym\\AppGym.csproj",
-        "packagesPath": "C:\\Users\\Lucas Lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\AppGym\\obj\\",
+        "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\AppGym\\AppGym.csproj",
+        "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\AppGym\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lucas Lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj"
+              "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\Service.csproj"
+              "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\Service.csproj"
               }
             }
           }
@@ -99,17 +103,21 @@
         }
       }
     },
-    "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj": {
+    "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Lucas Lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lucas Lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -166,17 +174,21 @@
         }
       }
     },
-    "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Lucas Lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lucas Lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -191,8 +203,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj"
+              "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj"
               }
             }
           }
@@ -222,6 +234,12 @@
               "target": "Package",
               "version": "[8.0.6, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -247,17 +265,21 @@
         }
       }
     },
-    "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\Service.csproj": {
+    "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\Lucas Lima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\obj\\",
+        "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lucas Lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -272,11 +294,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj"
+              "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

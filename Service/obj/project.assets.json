@@ -1276,19 +1276,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lucas Lima\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuário\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\Service.csproj",
-      "packagesPath": "C:\\Users\\Lucas Lima\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Service\\obj\\",
+      "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\Service.csproj",
+      "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Service\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Lucas Lima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1303,11 +1308,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Domain\\Domain.csproj"
+            "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Lucas Lima\\Desktop\\AppGym\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\Downloads\\AppGym\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
