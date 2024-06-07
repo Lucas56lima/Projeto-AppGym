@@ -16,14 +16,19 @@ namespace AppGym.Controllers
         }
 
         [HttpPost("RegisterWorkout")]        
-        public async Task<IActionResult> PostWorkoutAsync([FromBody]Workout workout)
+        public async Task<ActionResult<Workout>> PostWorkoutAsync([FromBody]Workout workout)
         {
             var newWorkout = await _service.PostWorkoutAsync(workout);
             return Ok(newWorkout);
         }
+        [HttpGet("ViewAllWorkouts")]
+        public async Task<IActionResult> GetAllWorkoutsAsync()
+        {
+            return Ok(await _service.GetAllWorkoutsAsync());
+        }
 
         [HttpGet("ViewWorkoutById/{id}")]        
-        public async Task<IActionResult> GetWorkouByIdAsync(int id)
+        public async Task<IActionResult> GetWorkoutByIdAsync(int id)
         {
             return Ok(await _service.GetWorkoutByIdAsync(id));
         }

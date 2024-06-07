@@ -1,26 +1,94 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\",
+  "WorkspaceRootPath": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\downloads\\appgym\\domain\\entities\\workoutpersonalized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\workoutpersonalized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Migrations\\20240607002827_AppGymInitialTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20240607002827_AppGymInitialTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\downloads\\appgym\\service\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\domain\\entities\\customworkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\customworkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\domain\\entities\\customworkoutdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\customworkoutdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\service\\services\\workoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\workoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\appgym\\controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\service\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\usu\u00E1rio\\downloads\\appgym\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\service\\services\\customworkoutservicedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\customworkoutservicedetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\usu\u00E1rio\\downloads\\appgym\\appgym\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\service\\services\\customworkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\customworkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\infrastructure\\repositories\\customworkoutdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\customworkoutdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\domain\\interface\\icustomworkoutdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\icustomworkoutdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\domain\\interface\\icustomworkoutdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\icustomworkoutdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\domain\\interface\\icustomworkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\icustomworkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\appgym\\controllers\\customworkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\controllers\\customworkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\appgym\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Infrastructure\\Migrations\\20240606175517_AppGymDbInitialTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20240606175517_AppGymDbInitialTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\domain\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\infrastructure\\context\\appgymcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\context\\appgymcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\infrastructure\\context\\appgymcontextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\context\\appgymcontextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\domain\\entities\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\appgym\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\appgym\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\appgym\\appgym.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\appgym.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\lucas lima\\source\\repos\\project-appgym\\infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,38 +103,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WorkoutPersonalized.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Domain\\Entities\\WorkoutPersonalized.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\WorkoutPersonalized.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Domain\\Entities\\WorkoutPersonalized.cs",
-              "RelativeToolTip": "Domain\\Entities\\WorkoutPersonalized.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAIwAsAAAAxAAAA",
+              "Title": "20240607002827_AppGymInitialTables.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Migrations\\20240607002827_AppGymInitialTables.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20240607002827_AppGymInitialTables.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Migrations\\20240607002827_AppGymInitialTables.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20240607002827_AppGymInitialTables.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T19:08:58.718Z",
+              "WhenOpened": "2024-06-07T00:28:27.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20240606175517_AppGymDbInitialTables.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Infrastructure\\Migrations\\20240606175517_AppGymDbInitialTables.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20240606175517_AppGymDbInitialTables.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Infrastructure\\Migrations\\20240606175517_AppGymDbInitialTables.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20240606175517_AppGymDbInitialTables.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "DocumentIndex": 3,
+              "Title": "WorkoutService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Service\\Services\\WorkoutService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\WorkoutService.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Service\\Services\\WorkoutService.cs",
+              "RelativeToolTip": "Service\\Services\\WorkoutService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T17:55:18.106Z",
+              "WhenOpened": "2024-06-07T00:15:19.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "CustomWorkoutServiceDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\Source\\Repos\\Project-AppGym\\Service\\Services\\CustomWorkoutServiceDetailService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\CustomWorkoutServiceDetailService.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\Source\\Repos\\Project-AppGym\\Service\\Services\\CustomWorkoutServiceDetailService.cs",
+              "RelativeToolTip": "Service\\Services\\CustomWorkoutServiceDetailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T00:00:40.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICustomWorkoutDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\ICustomWorkoutDetailService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\ICustomWorkoutDetailService.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\ICustomWorkoutDetailService.cs",
+              "RelativeToolTip": "Domain\\Interface\\ICustomWorkoutDetailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:54:26.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Service\\Services\\UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Service\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Service\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Service\\Services\\UserService.cs",
               "RelativeToolTip": "Service\\Services\\UserService.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCsAAAARAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T16:53:03.325Z",
               "EditorCaption": ""
@@ -74,28 +168,222 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\Infrastructure\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAAAAAAA",
+              "Title": "CustomWorkoutDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Entities\\CustomWorkoutDetail.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\CustomWorkoutDetail.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Entities\\CustomWorkoutDetail.cs",
+              "RelativeToolTip": "Domain\\Entities\\CustomWorkoutDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T16:44:39.15Z",
+              "WhenOpened": "2024-06-06T23:08:23.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "CustomWorkout.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\Source\\Repos\\Project-AppGym\\Domain\\Entities\\CustomWorkout.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\CustomWorkout.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\Source\\Repos\\Project-AppGym\\Domain\\Entities\\CustomWorkout.cs",
+              "RelativeToolTip": "Domain\\Entities\\CustomWorkout.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T19:08:58.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorkoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\WorkoutController.cs",
+              "RelativeDocumentMoniker": "AppGym\\Controllers\\WorkoutController.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\WorkoutController.cs",
+              "RelativeToolTip": "AppGym\\Controllers\\WorkoutController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T00:08:53.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomWorkoutDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Repositories\\CustomWorkoutDetailRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CustomWorkoutDetailRepository.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Repositories\\CustomWorkoutDetailRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\CustomWorkoutDetailRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAB0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:57:33.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomWorkoutService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Service\\Services\\CustomWorkoutService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\CustomWorkoutService.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Service\\Services\\CustomWorkoutService.cs",
+              "RelativeToolTip": "Service\\Services\\CustomWorkoutService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:41:30.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ICustomWorkoutDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\ICustomWorkoutDetailRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\ICustomWorkoutDetailRepository.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\ICustomWorkoutDetailRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\ICustomWorkoutDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:54:11.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICustomWorkoutService.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\ICustomWorkoutService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\ICustomWorkoutService.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\ICustomWorkoutService.cs",
+              "RelativeToolTip": "Domain\\Interface\\ICustomWorkoutService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:34:39.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomWorkoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\CustomWorkoutController.cs",
+              "RelativeDocumentMoniker": "AppGym\\Controllers\\CustomWorkoutController.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\CustomWorkoutController.cs",
+              "RelativeToolTip": "AppGym\\Controllers\\CustomWorkoutController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:28:35.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\AppGym\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "AppGym\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Downloads\\AppGym\\AppGym\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\UserController.cs",
               "RelativeToolTip": "AppGym\\Controllers\\UserController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowBwAAAA7AAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBwAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T16:39:19.41Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "Domain\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:34:50.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Workout.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Entities\\Workout.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Workout.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Domain\\Entities\\Workout.cs",
+              "RelativeToolTip": "Domain\\Entities\\Workout.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:21:35.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppGymContextDb.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Context\\AppGymContextDb.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Context\\AppGymContextDb.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Context\\AppGymContextDb.cs",
+              "RelativeToolTip": "Infrastructure\\Context\\AppGymContextDb.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwCYAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:13:42.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppGymcontextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Context\\AppGymcontextFactory.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Context\\AppGymcontextFactory.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Context\\AppGymcontextFactory.cs",
+              "RelativeToolTip": "Infrastructure\\Context\\AppGymcontextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:04:28.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Program.cs",
+              "RelativeDocumentMoniker": "AppGym\\Program.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\Program.cs",
+              "RelativeToolTip": "AppGym\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:05:37.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\appsettings.json",
+              "RelativeDocumentMoniker": "AppGym\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\AppGym\\appsettings.json",
+              "RelativeToolTip": "AppGym\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-06T23:03:29.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppGym",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\Source\\Repos\\Project-AppGym\\AppGym\\AppGym.csproj",
+              "RelativeDocumentMoniker": "AppGym\\AppGym.csproj",
+              "ToolTip": "C:\\Users\\Lucas Lima\\Source\\Repos\\Project-AppGym\\AppGym\\AppGym.csproj",
+              "RelativeToolTip": "AppGym\\AppGym.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-06T23:02:20.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Lucas Lima\\source\\repos\\Project-AppGym\\Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:44:39.15Z"
             }
           ]
         }

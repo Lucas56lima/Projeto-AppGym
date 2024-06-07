@@ -6,11 +6,32 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class AppGymDbInitialTables : Migration
+    public partial class AppGymInitialTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "CustomWorkouts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Finally = table.Column<string>(type: "TEXT", nullable: true),
+                    Description = table.Column<string>(type: "TEXT", nullable: true),
+                    TrainningPlace = table.Column<string>(type: "TEXT", nullable: true),
+                    ImplementationDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    ExpirationDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Repetitions = table.Column<int>(type: "INTEGER", nullable: false),
+                    Time = table.Column<int>(type: "INTEGER", nullable: false),
+                    Active = table.Column<bool>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CustomWorkouts", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Payments",
                 columns: table => new
@@ -85,31 +106,42 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "WorkoutsPersonalizeds",
+                name: "CustomWorkoutDetails",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
-                    Finally = table.Column<string>(type: "TEXT", nullable: true),
-                    Description = table.Column<string>(type: "TEXT", nullable: true),
-                    TrainningPlace = table.Column<string>(type: "TEXT", nullable: true),
-                    ImplementationDate = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    ExpirationDate = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    Repetitions = table.Column<int>(type: "INTEGER", nullable: false),
-                    Time = table.Column<int>(type: "INTEGER", nullable: false),
+                    CustomWorkoutId = table.Column<int>(type: "INTEGER", nullable: false),
                     WorkoutId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Active = table.Column<bool>(type: "INTEGER", nullable: false)
+                    Sequence = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_WorkoutsPersonalizeds", x => x.Id);
+                    table.PrimaryKey("PK_CustomWorkoutDetails", x => new { x.CustomWorkoutId, x.WorkoutId });
+                    table.ForeignKey(
+                        name: "FK_CustomWorkoutDetails_CustomWorkouts_CustomWorkoutId",
+                        column: x => x.CustomWorkoutId,
+                        principalTable: "CustomWorkouts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_CustomWorkoutDetails_Workouts_WorkoutId",
+                        column: x => x.WorkoutId,
+                        principalTable: "Workouts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CustomWorkoutDetails_WorkoutId",
+                table: "CustomWorkoutDetails",
+                column: "WorkoutId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "CustomWorkoutDetails");
+
             migrationBuilder.DropTable(
                 name: "Payments");
 
@@ -120,10 +152,10 @@ namespace Infrastructure.Migrations
                 name: "Users");
 
             migrationBuilder.DropTable(
-                name: "Workouts");
+                name: "CustomWorkouts");
 
             migrationBuilder.DropTable(
-                name: "WorkoutsPersonalizeds");
+                name: "Workouts");
         }
     }
 }

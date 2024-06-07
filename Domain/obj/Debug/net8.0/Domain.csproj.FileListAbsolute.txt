@@ -23,3 +23,16 @@ C:\Users\Usuário\Downloads\AppGym\Domain\obj\Debug\net8.0\Domain.dll
 C:\Users\Usuário\Downloads\AppGym\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Usuário\Downloads\AppGym\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Usuário\Downloads\AppGym\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Lucas Lima\Source\Repos\Project-AppGym\Domain\obj\Debug\net8.0\ref\Domain.dll

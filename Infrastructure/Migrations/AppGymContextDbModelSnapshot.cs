@@ -17,6 +17,62 @@ namespace Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.6");
 
+            modelBuilder.Entity("Domain.Entities.CustomWorkout", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ExpirationDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Finally")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ImplementationDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Repetitions")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Time")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("TrainningPlace")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomWorkouts");
+                });
+
+            modelBuilder.Entity("Domain.Entities.CustomWorkoutDetail", b =>
+                {
+                    b.Property<int?>("CustomWorkoutId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("WorkoutId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Sequence")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("CustomWorkoutId", "WorkoutId");
+
+                    b.HasIndex("WorkoutId");
+
+                    b.ToTable("CustomWorkoutDetails");
+                });
+
             modelBuilder.Entity("Domain.Entities.Payment", b =>
                 {
                     b.Property<int>("Id")
@@ -136,45 +192,33 @@ namespace Infrastructure.Migrations
                     b.ToTable("Workouts");
                 });
 
-            modelBuilder.Entity("Domain.Entities.WorkoutPersonalized", b =>
+            modelBuilder.Entity("Domain.Entities.CustomWorkoutDetail", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.HasOne("Domain.Entities.CustomWorkout", "CustomWorkout")
+                        .WithMany("CustomWorkoutDetails")
+                        .HasForeignKey("CustomWorkoutId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<bool>("Active")
-                        .HasColumnType("INTEGER");
+                    b.HasOne("Domain.Entities.Workout", "Workout")
+                        .WithMany("CustomWorkoutDetails")
+                        .HasForeignKey("WorkoutId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<string>("Description")
-                        .HasColumnType("TEXT");
+                    b.Navigation("CustomWorkout");
 
-                    b.Property<DateTime>("ExpirationDate")
-                        .HasColumnType("TEXT");
+                    b.Navigation("Workout");
+                });
 
-                    b.Property<string>("Finally")
-                        .HasColumnType("TEXT");
+            modelBuilder.Entity("Domain.Entities.CustomWorkout", b =>
+                {
+                    b.Navigation("CustomWorkoutDetails");
+                });
 
-                    b.Property<DateTime>("ImplementationDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Repetitions")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Time")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("TrainningPlace")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("WorkoutId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("WorkoutsPersonalizeds");
+            modelBuilder.Entity("Domain.Entities.Workout", b =>
+                {
+                    b.Navigation("CustomWorkoutDetails");
                 });
 #pragma warning restore 612, 618
         }

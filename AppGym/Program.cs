@@ -14,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("ConectionDefault");
+var conectionSecundary = builder.Configuration.GetConnectionString("ConectionSecundary");
 Console.WriteLine($"String de conexão: {connectionString}");
 
 if (string.IsNullOrWhiteSpace(connectionString))
@@ -22,7 +23,7 @@ if (string.IsNullOrWhiteSpace(connectionString))
 }
 
 builder.Services.AddDbContext<AppGymContextDb>(options =>
-    options.UseSqlite(connectionString));    
+    options.UseSqlite(conectionSecundary));    
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();

@@ -1,6 +1,6 @@
 namespace Domain.Entities
 {
-    public class WorkoutPersonalized
+    public class CustomWorkout
     {
         public int Id{ get; set; }
         public required string Name{ get; set; }
@@ -10,8 +10,9 @@ namespace Domain.Entities
         public DateTime ImplementationDate { get; set; }
         public DateTime ExpirationDate { get; set; }
         public required int Repetitions{get;set;}
-        public required int Time{get; set;}
-        public required int WorkoutId { get; set; }
+        public required int Time{get; set;}        
+        public ICollection<CustomWorkoutDetail> CustomWorkoutDetails { get; set; }
         public bool Active {get;set;} = true;
+
     }
 }

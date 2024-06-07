@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Domain.Entities
 {
     public class Workout
@@ -15,6 +10,7 @@ namespace Domain.Entities
         public required string TrainningPlace { get; set; }
         public DateTime ImplementationDate { get; set; }
         public DateTime ExpirationDate { get; set; }
+        public ICollection<CustomWorkoutDetail> CustomWorkoutDetails { get; set; }
         public bool Active {get;set;} = true;
         
     }
