@@ -20,24 +20,18 @@ namespace Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Chama o método base para garantir que a configuração padrão seja aplicada.
-            base.OnModelCreating(modelBuilder);
-
-            // Configura a chave primária composta para a entidade CustomWorkoutDetail.
-            modelBuilder.Entity<CustomWorkoutDetail>()
-                .HasKey(cwd => new { cwd.CustomWorkoutId, cwd.WorkoutId });
-
-            // Configura a relação muitos-para-um entre CustomWorkout e CustomWorkoutDetail.
-            modelBuilder.Entity<CustomWorkoutDetail>()
-                .HasOne(cwd => cwd.CustomWorkout)
-                .WithMany(cw => cw.CustomWorkoutDetails)
-                .HasForeignKey(cwd => cwd.CustomWorkoutId);
-
-            // Configura a relação muitos-para-um entre Workout e CustomWorkoutDetail.
-            modelBuilder.Entity<CustomWorkoutDetail>()
-                .HasOne(cwd => cwd.Workout)
-                .WithMany(w => w.CustomWorkoutDetails)
-                .HasForeignKey(cwd => cwd.WorkoutId);
+            modelBuilder.Entity<User>()
+                .HasIndex(u => new { u.Email, u.Fone })
+                .IsUnique();
+            modelBuilder.Entity<Plan>()
+                .HasIndex(p => new { p.Name, p.Duration })
+                .IsUnique();
+            modelBuilder.Entity<Workout>()
+                .HasIndex(w => w.Name)
+                .IsUnique();
+            modelBuilder.Entity<CustomWorkout>()
+                .HasIndex(cw => cw.Name)
+                .IsUnique();            
         }
 
     }

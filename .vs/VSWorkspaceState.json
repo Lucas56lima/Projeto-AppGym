@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Infrastructure",
+    "\\Infrastructure\\Repositories"
   ],
-  "SelectedNode": "\\AppGym.sln",
+  "SelectedNode": "\\Infrastructure\\Repositories\\WorkoutRepository.cs",
   "PreviewInSolutionExplorer": false
 }

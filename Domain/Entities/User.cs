@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
@@ -8,7 +10,7 @@ namespace Domain.Entities
     public class User
     {
         public int Id{get;set;}
-        public required string Name{get;set;}
+        public required string Name{get;set;}        
         public required string Email {get;set;}
         public required string Password{get;set;}
         public required string Fone {get;set;}
@@ -17,9 +19,8 @@ namespace Domain.Entities
         public required string Plan {get;set;}
         public DateTime AccessionDate {get;set;}
         public int PaymentId {get;set;}
-        public bool Active = true;
-
-        public string DateFormated => Birthday.ToString("dd-MM-yyyy");
+        public bool Active { get; set; } = true;
+        public string DateFormated => Birthday.ToString("yyyy-MM-dd");
                       
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dxGZylpIqyw=",
+  "dgSpecHash": "LHPsiRMS7cY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Project-AppGym\\AppGym\\AppGym.csproj",
+  "projectFilePath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\AppGym\\AppGym.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas Lima\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lucas Lima\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.6\\microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",

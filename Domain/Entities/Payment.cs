@@ -13,6 +13,6 @@ namespace Domain.Entities
         public DateTime RenewalDate { get; set; }
         public DateTime Duration { get; set; }
         public int UserId { get; set; }
-        public bool Active {get;set;} = true;
+        public bool Active = true;
     }
 }

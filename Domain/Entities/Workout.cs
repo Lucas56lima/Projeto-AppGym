@@ -10,8 +10,8 @@ namespace Domain.Entities
         public required string TrainningPlace { get; set; }
         public DateTime ImplementationDate { get; set; }
         public DateTime ExpirationDate { get; set; }
-        public ICollection<CustomWorkoutDetail> CustomWorkoutDetails { get; set; }
-        public bool Active {get;set;} = true;
+        public int CustomWorkoutId { get; set; }
+        public bool Active { get; set; } = true;
         
     }
 }

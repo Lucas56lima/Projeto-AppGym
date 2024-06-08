@@ -11,7 +11,7 @@ namespace Domain.Entities
         public required string Name { get; set; }
         public required Double Value { get; set; }
         public required int Duration { get; set; }
-        public bool Active = true;        
+        public bool Active { get; set; } = true;        
 
     }
 }

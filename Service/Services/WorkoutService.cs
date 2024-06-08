@@ -23,19 +23,12 @@ namespace Service.Services
 
         public async Task<Workout> PostWorkoutAsync(Workout workout)
         {
-            var newWorkout = new Workout
-            {
-                Name = workout.Name,
-                MuscleGroup = workout.MuscleGroup,
-                Video = workout.Video,
-                Description = workout.Description,
-                TrainningPlace = workout.TrainningPlace,
-                ImplementationDate = workout.ImplementationDate,
-                ExpirationDate = workout.ExpirationDate,
-                Active = workout.Active
-            };
-            await _workoutRepository.PostWorkoutAsync(newWorkout);
-            return newWorkout;
+            return await _workoutRepository.PostWorkoutAsync(workout);
+        }
+
+        public async Task<Workout> PutWorkoutAsync(int customWorkoutDetailId, int workoutId)
+        {
+           return await _workoutRepository.PutWorkoutAsync(customWorkoutDetailId, workoutId);
         }
     }
 }

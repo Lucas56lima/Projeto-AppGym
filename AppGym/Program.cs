@@ -29,6 +29,10 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
 builder.Services.AddScoped<IWorkoutService, WorkoutService>();
+builder.Services.AddScoped<ICustomWorkoutRepository, CustomWorkoutRepository>();
+builder.Services.AddScoped<ICustomWorkoutService, CustomWorkoutService>();
+builder.Services.AddScoped<ICustomWorkoutDetailRepository, CustomWorkoutDetailRepository>();
+builder.Services.AddScoped<ICustomWorkoutDetailService, CustomWorkoutDetailService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

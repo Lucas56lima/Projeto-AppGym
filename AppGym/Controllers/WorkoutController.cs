@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Interface;
 using Microsoft.AspNetCore.Mvc;
+using System.Formats.Asn1;
 
 namespace AppGym.Controllers
 {
@@ -32,5 +33,11 @@ namespace AppGym.Controllers
         {
             return Ok(await _service.GetWorkoutByIdAsync(id));
         }
+        [HttpPut("UpdateCustomWorkouIdInWorkout")]
+        public async Task<IActionResult> PutWorkoutAsync(int customWorkoutId, int workoutId)
+        {
+            return Ok(await _service.PutWorkoutAsync(customWorkoutId, workoutId));
+        }
+
     }
 }

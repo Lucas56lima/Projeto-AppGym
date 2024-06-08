@@ -1,22 +1,23 @@
 ﻿using Domain.Entities;
 using Domain.Interface;
+using Domain.Viewmodel;
 
 namespace Service.Services
 {
-    public class CustomWorkoutServiceDetailService : ICustomWorkoutDetailService
+    public class CustomWorkoutDetailService : ICustomWorkoutDetailService
     {
         private readonly ICustomWorkoutDetailRepository _repository;
-        public CustomWorkoutServiceDetailService(ICustomWorkoutDetailRepository repository)
+        public CustomWorkoutDetailService(ICustomWorkoutDetailRepository repository)
         {
             _repository = repository;
         }
 
-        public async Task<IEnumerable<CustomWorkoutDetail>> GetAllCustomWorkoutsDeatilsAsync()
+        public async Task<IEnumerable<CustomWorkoutDetailViewModel>> GetAllCustomWorkoutsDetailsAsync()
         {
-            return await _repository.GetAllCustomWorkoutsDeatilsAsync();
+            return await _repository.GetAllCustomWorkoutsDetailsAsync();
         }
 
-        public async Task<CustomWorkoutDetail> GetCustomWorkoutDetailByNameAsync(string name)
+        public async Task<CustomWorkoutDetailViewModel> GetCustomWorkoutDetailByNameAsync(string name)
         {
             return await _repository.GetCustomWorkoutDetailByNameAsync(name);
         }
