@@ -59,7 +59,7 @@ namespace Infrastructure.Repositories
             try
             {
                 return await _context.CustomWorkouts
-                         .Where(c => c.Active == true && c.Id == id)
+                         .Where(c => c.Active == true && c.CustomWorkoutId == id)
                          .FirstOrDefaultAsync();
             }
             catch (SqliteException ex) when (ex.ErrorCode == 2627)

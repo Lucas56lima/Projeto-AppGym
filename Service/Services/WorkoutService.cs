@@ -26,9 +26,9 @@ namespace Service.Services
             return await _workoutRepository.PostWorkoutAsync(workout);
         }
 
-        public async Task<Workout> PutWorkoutAsync(int customWorkoutDetailId, int workoutId)
-        {
-           return await _workoutRepository.PutWorkoutAsync(customWorkoutDetailId, workoutId);
-        }
+        //public async Task<Workout> PutWorkoutAsync(int customWorkoutDetailId, int workoutId)
+        //{
+        //   return await _workoutRepository.PutWorkoutAsync(customWorkoutDetailId, workoutId);
+        //}
     }
 }

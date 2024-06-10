@@ -17,7 +17,7 @@ namespace Service.Services
             return await _repository.GetAllCustomWorkoutsDetailsAsync();
         }
 
-        public async Task<CustomWorkoutDetailViewModel> GetCustomWorkoutDetailByNameAsync(string name)
+        public async Task<CustomWorkoutViewModel> GetCustomWorkoutDetailByNameAsync(string name)
         {
             return await _repository.GetCustomWorkoutDetailByNameAsync(name);
         }

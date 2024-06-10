@@ -27,10 +27,10 @@ namespace Infrastructure.Context
                 .HasIndex(p => new { p.Name, p.Duration })
                 .IsUnique();
             modelBuilder.Entity<Workout>()
-                .HasIndex(w => w.Name)
+                .HasIndex(w => new { w.WorkoutName, w.Video })
                 .IsUnique();
             modelBuilder.Entity<CustomWorkout>()
-                .HasIndex(cw => cw.Name)
+                .HasIndex(cw => cw.CustomWorkoutName)
                 .IsUnique();            
         }
 

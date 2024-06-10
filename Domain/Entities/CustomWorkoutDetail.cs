@@ -2,7 +2,7 @@
 {
     public class CustomWorkoutDetail
     {        
-        public int Id { get; set; }
+        public int CustomWorkoutDetailId { get; set; }
         public int CustomWorkoutId { get; set; }        
         public int WorkoutId { get; set; }
         public int Repetitions { get; set; }

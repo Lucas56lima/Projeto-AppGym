@@ -58,7 +58,7 @@ namespace Infrastructure.Repositories
             try
             {
                 return await _context.Workouts
-                         .Where(c => c.Active == true && c.Id == id)
+                         .Where(c => c.Active == true && c.WorkoutId == id)
                          .FirstOrDefaultAsync();
             }
             catch (SqliteException ex) when (ex.ErrorCode == 2627)
@@ -108,34 +108,34 @@ namespace Infrastructure.Repositories
         /// <param name="customWorkoutId">customWorkoutId contendo o id do treino personalizado.</param>
         /// <param name="workoutId">workoutId contendo o id do treino que será vinculado com o treino personalizado.</param>
         /// <returns>Retorna o objeto Workout Alterado.</returns>
-        public async Task<Workout> PutWorkoutAsync(int customWorkoutId, int workoutId)
-        {
-            ///<sumary>
-            ///Try valida se a conexão é válida ou se os dados foram inseridos com sucesso.
-            /// </sumary>
-            try
-            {
-               var workout = await _context.Workouts
-                            .Where(w => w.Id == workoutId)
-                            .FirstOrDefaultAsync();
-                workout.CustomWorkoutId = customWorkoutId;
-                _context.Entry(workout).Property(e => e.CustomWorkoutId).IsModified = true;
+        //public async Task<Workout> PutWorkoutAsync(int customWorkoutId, int workoutId)
+        //{
+        //    ///<sumary>
+        //    ///Try valida se a conexão é válida ou se os dados foram inseridos com sucesso.
+        //    /// </sumary>
+        //    try
+        //    {
+        //       var workout = await _context.Workouts
+        //                    .Where(w => w.WorkoutId == workoutId)
+        //                    .FirstOrDefaultAsync();
+        //        workout. = customWorkoutId;
+        //        _context.Entry(workout).Property(e => e.CustomWorkoutId).IsModified = true;
 
-                await _context.SaveChangesAsync();
-                return workout;
-            }
-            catch (SqliteException ex)
-            {
-                if (ex.SqliteErrorCode == 19)
-                {
-                    throw new Exception("Erro ao atualizar tabela CustomWorkoutId do Treino.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
-            }
+        //        await _context.SaveChangesAsync();
+        //        return workout;
+        //    }
+        //    catch (SqliteException ex)
+        //    {
+        //        if (ex.SqliteErrorCode == 19)
+        //        {
+        //            throw new Exception("Erro ao atualizar tabela CustomWorkoutId do Treino.", ex);
+        //        }
+        //        else
+        //        {
+        //            throw new Exception("Erro ao acessar o banco de dados.", ex);
+        //        }
+        //    }
 
-        }
+        ////}
     }
 }

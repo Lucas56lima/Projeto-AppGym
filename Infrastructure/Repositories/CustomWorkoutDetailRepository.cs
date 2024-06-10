@@ -28,26 +28,26 @@ namespace Infrastructure.Repositories
         {
             try
             {
-                return await _context.Workouts
+                return await _context.CustomWorkoutDetails
+                                     .Join(_context.Workouts,                                           
+                                           customWorkoutDetails => customWorkoutDetails.WorkoutId,
+                                           workout => workout.WorkoutId,
+                                           (customWorkoutDetails, workout) => new { customWorkoutDetails, workout})
                                      .Join(_context.CustomWorkouts,
-                                           workout => workout.CustomWorkoutId,
-                                           customWorkout => customWorkout.Id,
-                                           (workout, customWorkout) => new { workout, customWorkout })
-                                     .Join(_context.CustomWorkoutDetails,
-                                           combined => combined.customWorkout.Id,
-                                           customWorkoutDetail => customWorkoutDetail.CustomWorkoutId,
-                                           (combined, customWorkoutDetail) => new CustomWorkoutDetailViewModel
+                                           combined => combined.customWorkoutDetails.CustomWorkoutId,
+                                           customWorkout => customWorkout.CustomWorkoutId,
+                                           (combined, customWorkout) =>  new CustomWorkoutDetailViewModel                                     
                                            {
-                                               Name = combined.workout.Name,
+                                               Name = combined.workout.WorkoutName,
                                                MuscleGroup = combined.workout.MuscleGroup,
                                                Description = combined.workout.Description,
                                                TrainningPlace = combined.workout.TrainningPlace,
-                                               CustomWorkoutName = combined.customWorkout.Name,
-                                               Finally = combined.customWorkout.Finally,
-                                               Repetitions = customWorkoutDetail.Repetitions,
-                                               Time = customWorkoutDetail.Time,
-                                               Interval = customWorkoutDetail.Interval,
-                                               Sequence = customWorkoutDetail.Sequence
+                                               CustomWorkoutName = customWorkout.CustomWorkoutName,
+                                               Finally = customWorkout.Finally,
+                                               Repetitions = combined.customWorkoutDetails.Repetitions,
+                                               Time = combined.customWorkoutDetails.Time,
+                                               Interval = combined.customWorkoutDetails.Interval,
+                                               Sequence = combined.customWorkoutDetails.Sequence
                                            }).ToListAsync();
             }
             catch (DbUpdateException ex)
@@ -64,36 +64,35 @@ namespace Infrastructure.Repositories
         /// </summary>
         /// <param name="name">Nome do treino personalizado.</param>
         /// <returns>Retorna um objeto CustomWorkoutDetailViewModel correspondente ao nome fornecido.</returns>
-        public async Task<CustomWorkoutDetailViewModel> GetCustomWorkoutDetailByNameAsync(string name)
+        public async Task<CustomWorkoutViewModel> GetCustomWorkoutDetailByNameAsync(string name)
         {
             ///<sumary>
             ///Try valida se a conexão é válida ou se existe treinos com o nome informado.
             /// </sumary>
             try
             {
-                return await _context.Workouts
-                                     .Join(_context.CustomWorkouts,
-                                           workout => workout.CustomWorkoutId,
-                                           customWorkout => customWorkout.Id,
-                                           (workout, customWorkout) => new { workout, customWorkout })
-                                     .Join(_context.CustomWorkoutDetails,
-                                           combined => combined.customWorkout.Id,
-                                           customWorkoutDetail => customWorkoutDetail.CustomWorkoutId,
-                                           (combined, customWorkoutDetail) => new CustomWorkoutDetailViewModel
-                                           {
-                                               Name = combined.workout.Name,
-                                               MuscleGroup = combined.workout.MuscleGroup,
-                                               Description = combined.workout.Description,
-                                               TrainningPlace = combined.workout.TrainningPlace,
-                                               CustomWorkoutName = combined.customWorkout.Name,
-                                               Finally = combined.customWorkout.Finally,
-                                               Repetitions = customWorkoutDetail.Repetitions,
-                                               Time = customWorkoutDetail.Time,
-                                               Interval = customWorkoutDetail.Interval,
-                                               Sequence = customWorkoutDetail.Sequence
-                                           })
-                                     .Where(c => c.CustomWorkoutName == name)
-                                     .FirstOrDefaultAsync();
+                return await _context.CustomWorkoutDetails
+                            .Join(_context.CustomWorkouts,
+                                customWorkoutDetails => customWorkoutDetails.CustomWorkoutDetailId,
+                                customWorkout => customWorkout.CustomWorkoutId,
+                                (customWorkoutDetails, customWorkout) => new { customWorkoutDetails, customWorkout })
+                            .Join(_context.CustomWorkoutDetails,
+                                combined => combined.customWorkout.CustomWorkoutId,
+                                customWorkoutDetail => customWorkoutDetail.CustomWorkoutId,                                
+                                (combined, customWorkoutDetail) => new { combined.customWorkout, customWorkoutDetail })
+
+                            .Select(x => new CustomWorkoutViewModel
+                            {
+                                Name = x.customWorkout.CustomWorkoutName,
+                                Finally = x.customWorkout.Finally,
+                                Description = x.customWorkout.Description,
+                                TrainningPlace = x.customWorkout.TrainningPlace,
+                                AmountWorkouts = _context.CustomWorkoutDetails
+                                                .Count(innerCustomWorkoutDetail => innerCustomWorkoutDetail.CustomWorkoutId == x.customWorkout.CustomWorkoutId),
+                                ExpirationDate = x.customWorkout.ExpirationDate
+                            })
+                            .Where(c => c.Name == name)                            
+                            .FirstOrDefaultAsync();
             }
             catch (SqliteException ex)
             {
@@ -121,7 +120,7 @@ namespace Infrastructure.Repositories
             try
             {
                 await _context.AddAsync(customWorkoutDetail);
-                await _workoutRepository.PutWorkoutAsync(customWorkoutDetail.CustomWorkoutId, customWorkoutDetail.WorkoutId);
+                //await _workoutRepository.PutWorkoutAsync(customWorkoutDetail.CustomWorkoutId, customWorkoutDetail.WorkoutId);
                 await _context.SaveChangesAsync();
                 return customWorkoutDetail;
             }

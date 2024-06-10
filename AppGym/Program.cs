@@ -23,7 +23,7 @@ if (string.IsNullOrWhiteSpace(connectionString))
 }
 
 builder.Services.AddDbContext<AppGymContextDb>(options =>
-    options.UseSqlite(conectionSecundary));    
+    options.UseSqlite(connectionString));    
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();

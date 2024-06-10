@@ -7,6 +7,6 @@ namespace Domain.Interface
         Task<Workout> GetWorkoutByIdAsync(int id);
         Task<IEnumerable<Workout>> GetAllWorkoutsAsync();
         Task<Workout> PostWorkoutAsync(Workout workout);
-        Task<Workout> PutWorkoutAsync(int customWorkoutId, int workoutId);
+        //Task<Workout> PutWorkoutAsync(int customWorkoutId, int workoutId);
     }
 }

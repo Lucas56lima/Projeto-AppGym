@@ -1,5 +1,6 @@
 using Domain.Entities;
 using Domain.Interface;
+using Domain.Viewmodel;
 using Infrastructure.Context;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
@@ -128,6 +129,11 @@ namespace Infrastructure.Repositories
                     throw new Exception("Erro ao acessar o banco de dados.", ex);
                 }
             }
+        }
+
+        public async Task<UserViewModel> PutUserAsync(string email, User user)
+        {
+            
         }
     }
 }
