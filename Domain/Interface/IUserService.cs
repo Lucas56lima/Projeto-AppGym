@@ -10,6 +10,6 @@ namespace Domain.Interface
         Task<IEnumerable<User>> GetAllUsersAsync();
         Task <User>PostUserAsync(User user);
         Task<User> GetByEmailAsync(string email);
-        Task<UserViewModel> PutUserAsync(string email, User user);
+        
     }
 }

@@ -163,6 +163,9 @@ namespace Infrastructure.Migrations
                     b.Property<string>("Plan")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Role")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("SpecialCondition")
                         .HasColumnType("TEXT");
 

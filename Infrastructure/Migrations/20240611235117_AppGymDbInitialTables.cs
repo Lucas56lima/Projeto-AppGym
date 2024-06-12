@@ -95,6 +95,7 @@ namespace Infrastructure.Migrations
                     Plan = table.Column<string>(type: "TEXT", nullable: true),
                     AccessionDate = table.Column<DateTime>(type: "TEXT", nullable: false),
                     PaymentId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Role = table.Column<string>(type: "TEXT", nullable: true),
                     Active = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

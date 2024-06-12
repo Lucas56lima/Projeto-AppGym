@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppGymContextDb))]
-    [Migration("20240610153518_AppGymDbInitialTables")]
+    [Migration("20240611235117_AppGymDbInitialTables")]
     partial class AppGymDbInitialTables
     {
         /// <inheritdoc />
@@ -164,6 +164,9 @@ namespace Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Plan")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Role")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("SpecialCondition")

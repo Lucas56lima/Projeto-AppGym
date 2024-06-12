@@ -13,7 +13,7 @@ namespace Infrastructure.Context
             var optionsBuilder = new DbContextOptionsBuilder<AppGymContextDb>();
             
            
-            optionsBuilder.UseSqlite(conectionDefault) ; // Exemplo de string de conexão SQLite
+            optionsBuilder.UseSqlite(conectionSecondary) ; // Exemplo de string de conexão SQLite
 
             return new AppGymContextDb(optionsBuilder.Options);
         }

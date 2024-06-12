@@ -27,13 +27,14 @@ namespace Service.Services
         }
         /*
             Validação da rota que adiciona Usuário para não permitir e-mail duplicado. 
-         */
+        */
         public async Task<User> PostUserAsync(User user)
         {
             var emailDb = await GetByEmailAsync(user.Email);
             if (emailDb == null) 
             {
                 user.AccessionDate = DateTime.Today;
+                user.Role = "user";                
                 await _userRepository.PostUserAsync(user);
                 return user;
             }
@@ -41,7 +42,7 @@ namespace Service.Services
             {
                 Console.WriteLine("E-mail já cadastrado");
                 return null;
-            }            
+            }           
             
         }
     }

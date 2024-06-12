@@ -12,6 +12,7 @@ namespace Domain.Entities
         public required string Plan {get;set;}
         public DateTime AccessionDate {get;set;}
         public int PaymentId {get;set;}
+        public string Role {get;set;}
         public bool Active { get; set; } = true;
         public string DateFormated => Birthday.ToString("yyyy-MM-dd");
                       
