@@ -9,5 +9,6 @@
         public int Time {get; set; }
         public int Interval { get; set; }
         public int Sequence { get; set; }
+        public int Combination { get; set; }
     }
 }

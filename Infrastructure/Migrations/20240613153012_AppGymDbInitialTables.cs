@@ -22,7 +22,8 @@ namespace Infrastructure.Migrations
                     Repetitions = table.Column<int>(type: "INTEGER", nullable: false),
                     Time = table.Column<int>(type: "INTEGER", nullable: false),
                     Interval = table.Column<int>(type: "INTEGER", nullable: false),
-                    Sequence = table.Column<int>(type: "INTEGER", nullable: false)
+                    Sequence = table.Column<int>(type: "INTEGER", nullable: false),
+                    Combination = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -81,6 +82,36 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Roles",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SpecialUsers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Email = table.Column<string>(type: "TEXT", nullable: true),
+                    Password = table.Column<string>(type: "TEXT", nullable: true),
+                    Role = table.Column<string>(type: "TEXT", nullable: true),
+                    Active = table.Column<bool>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SpecialUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -124,6 +155,12 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_CustomWorkoutDetails_Combination",
+                table: "CustomWorkoutDetails",
+                column: "Combination",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_CustomWorkouts_CustomWorkoutName",
                 table: "CustomWorkouts",
                 column: "CustomWorkoutName",
@@ -133,6 +170,18 @@ namespace Infrastructure.Migrations
                 name: "IX_Plans_Name_Duration",
                 table: "Plans",
                 columns: new[] { "Name", "Duration" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Roles_Name",
+                table: "Roles",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SpecialUsers_Email",
+                table: "SpecialUsers",
+                column: "Email",
                 unique: true);
 
             migrationBuilder.CreateIndex(
@@ -162,6 +211,12 @@ namespace Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Plans");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
+
+            migrationBuilder.DropTable(
+                name: "SpecialUsers");
 
             migrationBuilder.DropTable(
                 name: "Users");

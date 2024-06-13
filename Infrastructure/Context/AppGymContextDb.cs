@@ -12,11 +12,14 @@ namespace Infrastructure.Context
        
         }
         public DbSet<User> Users { get;set;}
+        public DbSet<SpecialUser> SpecialUsers { get;set;}
         public DbSet<Plan> Plans { get;set;}
         public DbSet<Payment> Payments { get;set;}
         public DbSet<Workout> Workouts { get;set;}
         public DbSet<CustomWorkout> CustomWorkouts {  get;set;}
         public DbSet<CustomWorkoutDetail> CustomWorkoutDetails { get; set; }
+        public DbSet<Roles>Roles { get;set;}
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,7 +34,16 @@ namespace Infrastructure.Context
                 .IsUnique();
             modelBuilder.Entity<CustomWorkout>()
                 .HasIndex(cw => cw.CustomWorkoutName)
-                .IsUnique();            
+                .IsUnique();
+            modelBuilder.Entity<SpecialUser>()
+                .HasIndex(su => su.Email)
+                .IsUnique();
+            modelBuilder.Entity<Roles>()
+                .HasIndex(r => r.Name)
+                .IsUnique();
+            modelBuilder.Entity<CustomWorkoutDetail>()
+                .HasIndex(cwd => cwd.Combination)
+                .IsUnique();
         }
 
     }

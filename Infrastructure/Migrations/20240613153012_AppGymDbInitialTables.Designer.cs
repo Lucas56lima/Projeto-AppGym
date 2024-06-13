@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppGymContextDb))]
-    [Migration("20240611235117_AppGymDbInitialTables")]
+    [Migration("20240613153012_AppGymDbInitialTables")]
     partial class AppGymDbInitialTables
     {
         /// <inheritdoc />
@@ -61,6 +61,9 @@ namespace Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("Combination")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("CustomWorkoutId")
                         .HasColumnType("INTEGER");
 
@@ -80,6 +83,9 @@ namespace Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("CustomWorkoutDetailId");
+
+                    b.HasIndex("Combination")
+                        .IsUnique();
 
                     b.ToTable("CustomWorkoutDetails");
                 });
@@ -131,6 +137,52 @@ namespace Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Plans");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Roles", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("Domain.Entities.SpecialUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.ToTable("SpecialUsers");
                 });
 
             modelBuilder.Entity("Domain.Entities.User", b =>

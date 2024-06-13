@@ -24,7 +24,7 @@ builder.Services.AddSwaggerGen(options =>
         Title = "AppGym.Api",
         Description = "Api de Admin"
     });
-    options.AddSecurityDefinition(name: "Bearer", new OpenApiSecurityScheme()
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
     {
         Name = "Authorization",
         Type = SecuritySchemeType.ApiKey,
@@ -58,12 +58,11 @@ builder.Services.AddAuthentication(x =>
 })
     .AddJwtBearer(options =>
     {
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,
+            ValidateIssuer = false,
             ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidateIssuerSigningKey = true,            
             ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
         };
@@ -78,20 +77,22 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
     });
 
-var connectionString = builder.Configuration.GetConnectionString("ConectionDefault");
+var conectionDefault = builder.Configuration.GetConnectionString("ConectionDefault");
 var conectionSecundary = builder.Configuration.GetConnectionString("ConectionSecundary");
 //Console.WriteLine($"String de conexão: {connectionString}");
 
-if (string.IsNullOrWhiteSpace(connectionString))
+if (string.IsNullOrWhiteSpace(conectionDefault))
 {
     throw new InvalidOperationException("A string de conexão 'DefaultConnection' não está configurada.");
 }
 
 builder.Services.AddDbContext<AppGymContextDb>(options =>
-    options.UseSqlite(conectionSecundary));    
+    options.UseSqlite(conectionDefault));    
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ISpecialUserRepository, SpecialUserRepository>();
+builder.Services.AddScoped<ISpecialUserService, SpecialUserService>();
 builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
 builder.Services.AddScoped<IWorkoutService, WorkoutService>();
 builder.Services.AddScoped<ICustomWorkoutRepository, CustomWorkoutRepository>();
@@ -99,6 +100,7 @@ builder.Services.AddScoped<ICustomWorkoutService, CustomWorkoutService>();
 builder.Services.AddScoped<ICustomWorkoutDetailRepository, CustomWorkoutDetailRepository>();
 builder.Services.AddScoped<ICustomWorkoutDetailService, CustomWorkoutDetailService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IEncryptionService,EncryptionService>();
 
 var app = builder.Build();
 

@@ -1,14 +1,13 @@
 ﻿using Domain.Entities;
 using Domain.Interface;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppGym.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles ="admin,super,user")]
+    [Authorize]
     public class CustomWorkoutDetailController : ControllerBase
     {
         private readonly ICustomWorkoutDetailService _service;

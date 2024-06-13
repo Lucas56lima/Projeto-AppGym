@@ -49,7 +49,7 @@ namespace Infrastructure.Repositories
         /// </summary>
         /// <param name="email">Email do usuário a ser buscado.</param>
         /// <returns>Retorna um objeto com o usuário correspondente.</returns>
-        public async Task<User> GetByEmailAsync(string email)
+        public async Task<User> GetUserByEmailAsync(string email)
         {
             ///<sumary>
             ///Try valida se a conexão é válida ou se existe usuário disponível.

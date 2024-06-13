@@ -8,6 +8,7 @@ namespace AppGym.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "super,admin")]
     public class SpecialUserController : ControllerBase
     {
         private readonly ISpecialUserService _specialService;
@@ -16,8 +17,7 @@ namespace AppGym.Controllers
             _specialService = specialService;
         }
 
-        [HttpPost("RegisterSpecialUserAdmin")]
-        [Authorize(Roles ="admin,super")]
+        [HttpPost("RegisterSpecialUserAdmin")]        
         public async Task<IActionResult> PostSpecialUserAdminAsync(SpecialUser specialUser)
         {
             return Ok(await _specialService.PostSpecialUserAdminAsync(specialUser));
@@ -26,7 +26,7 @@ namespace AppGym.Controllers
         [Authorize(Roles = "super")]
         public async Task<IActionResult> PostSpecialUserSuperAsync(SpecialUser specialUser)
         {
-            return Ok(await _specialService.PostSpecialUserAdminAsync(specialUser));
+            return Ok(await _specialService.PostSpecialUserSuperAsync(specialUser));
         }
     }
 }

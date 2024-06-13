@@ -18,7 +18,7 @@ namespace Service.Services
         public async Task<SpecialUser> PostSpecialUserAdminAsync(SpecialUser specialUser)
         {
             var specialUserEmailDb = await _specialRepository.GetSpecialUserByEmailAsync(specialUser.Email);
-            if (specialUserEmailDb != null)
+            if (specialUserEmailDb == null)
             {
                 specialUser.Role = "admin";
                 return await _specialRepository.PostSpecialUserAdminAsync(specialUser);
@@ -33,10 +33,10 @@ namespace Service.Services
         {
 
             var specialUserEmailDb = await _specialRepository.GetSpecialUserByEmailAsync(specialUser.Email);
-            if (specialUserEmailDb != null)
+            if (specialUserEmailDb == null)
             {
                 specialUser.Role = "super";
-                return await _specialRepository.PostSpecialUserAdminAsync(specialUser);
+                return await _specialRepository.PostSpecialUserSuperAsync(specialUser);
             }
             else
             {
