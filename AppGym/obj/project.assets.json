@@ -5731,9 +5731,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\AppGym.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\AppGym\\AppGym.csproj",
       "projectName": "AppGym",
-      "projectPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\AppGym.csproj",
+      "projectPath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\AppGym\\AppGym.csproj",
       "packagesPath": "C:\\Users\\Lucas Lima\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\obj\\",
       "projectStyle": "PackageReference",
@@ -5753,11 +5753,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj"
+            "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj"
+            "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj"
             }
           }
         }

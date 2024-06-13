@@ -12,12 +12,12 @@ namespace Service.Services
     {
         private readonly IConfiguration _configuration;
         private readonly IUserRepository _userRepository;
-
+        private Timer _timer;
         public TokenService (IConfiguration configuration, IUserRepository userRepository)
         {
             _configuration = configuration;
-            _userRepository = userRepository;
-        }
+            _userRepository = userRepository;            
+        }        
 
         public async Task<string> GenerateToken(Login login)
         {
@@ -48,5 +48,24 @@ namespace Service.Services
 
             return token;            
         }
+        private void GenerateTokenCallback(Login login)
+        {
+            var token = GenerateToken(login).Result;
+        }
+
+        public Task StartAsync(CancellationToken cancellationToken)
+        {
+            _timer = new Timer(GenerateTokenCallback, null, TimeSpan.Zero, TimeSpan.FromMinutes(20));
+            return Task.CompletedTask;
+        }
+
+        public Task StopAsync(CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+        public Task Dispose()
+        {
+            throw new NotImplementedException();
+        }        
     }
 }

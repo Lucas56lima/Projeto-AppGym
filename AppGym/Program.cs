@@ -99,6 +99,7 @@ builder.Services.AddScoped<ICustomWorkoutService, CustomWorkoutService>();
 builder.Services.AddScoped<ICustomWorkoutDetailRepository, CustomWorkoutDetailRepository>();
 builder.Services.AddScoped<ICustomWorkoutDetailService, CustomWorkoutDetailService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

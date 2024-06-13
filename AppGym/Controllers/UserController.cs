@@ -43,7 +43,7 @@ namespace AppGym.Controllers
         /// </summary>
         /// <param name="id">O ID do usuário.</param>
         /// <returns>O usuário com o ID especificado.</returns>
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin,super")]
         [HttpGet("ViewUserById/{id}")]
         public async Task<IActionResult> GetUserByIdAsync(int id)
         {

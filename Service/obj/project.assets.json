@@ -3776,9 +3776,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj",
+      "projectPath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\Lucas Lima\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\obj\\",
       "projectStyle": "PackageReference",
@@ -3798,11 +3798,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj"
+            "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Lucas Lima\\source\\repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Lucas Lima\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

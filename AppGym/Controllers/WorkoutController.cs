@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Formats.Asn1;
 
@@ -7,6 +8,7 @@ namespace AppGym.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles ="admin,super,user")]
     public class WorkoutController : ControllerBase
     {
         private readonly IWorkoutService _service;
@@ -16,19 +18,22 @@ namespace AppGym.Controllers
             _service = service;
         }
 
-        [HttpPost("RegisterWorkout")]        
+        [HttpPost("RegisterWorkout")]
+        [Authorize(Roles = "admin,super")]
         public async Task<ActionResult<Workout>> PostWorkoutAsync([FromBody]Workout workout)
-        {
-            var newWorkout = await _service.PostWorkoutAsync(workout);
-            return Ok(newWorkout);
+        {           
+            return Ok(await _service.PostWorkoutAsync(workout));
         }
+        
         [HttpGet("ViewAllWorkouts")]
+        [Authorize(Roles = "admin,super")]
         public async Task<IActionResult> GetAllWorkoutsAsync()
         {
             return Ok(await _service.GetAllWorkoutsAsync());
         }
 
-        [HttpGet("ViewWorkoutById/{id}")]        
+        [HttpGet("ViewWorkoutById/{id}")]
+        [Authorize(Roles = "super")]
         public async Task<IActionResult> GetWorkoutByIdAsync(int id)
         {
             return Ok(await _service.GetWorkoutByIdAsync(id));

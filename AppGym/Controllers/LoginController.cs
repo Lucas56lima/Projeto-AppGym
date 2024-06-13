@@ -22,7 +22,7 @@ namespace AppGym.Controllers
             var token = await _tokenService.GenerateToken(login);
             if (token == "")
                 return Unauthorized();
-            return Ok(login);
+            return Ok(token);
         }
     }
 }
