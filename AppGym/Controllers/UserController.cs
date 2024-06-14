@@ -28,9 +28,8 @@ namespace AppGym.Controllers
         public async Task<IActionResult> PostUserAsync([FromBody] User user)
         {
             try
-            {
-                var newUser = await _service.PostUserAsync(user);
-                return Ok(newUser);
+            {                
+                return Ok(await _service.PostUserAsync(user));
             }
             catch (Exception ex)
             {
@@ -55,6 +54,43 @@ namespace AppGym.Controllers
                     return NotFound($"Usuário com ID {id} não encontrado");
                 }
                 return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao obter o usuário: {ex.Message}");
+            }
+        }
+        /// <summary>
+        /// Registra um novo usuário Admin com autorização de um usuário Super ou Admin.
+        /// </summary>
+        /// <param name="user">Os dados do usuário a serem registrados.</param>
+        /// <returns>O usuário recém-registrado.</returns>
+        [HttpPost("RegisterSpecialUserAdmin")]
+        [Authorize(Roles = "super,admin")]
+        public async Task<IActionResult> PostSpecialUserAdminAsync(User specialUser)
+        {
+            try
+            {
+                return Ok(await _service.PostSpecialUserAdminAsync(specialUser));
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, $"Erro ao obter o usuário: {ex.Message}");
+            }
+           
+        }
+        [HttpPost("RegisterSpecialUserSuper")]
+        [Authorize(Roles = "super")]
+        /// <summary>
+        /// Registra um novo usuário Super com autorização somente para outro Super.
+        /// </summary>
+        /// <param name="user">Os dados do usuário a serem registrados.</param>
+        /// <returns>O usuário recém-registrado.</returns>
+        public async Task<IActionResult> PostSpecialUserSuperAsync(User specialUser)
+        {
+            try
+            {
+                return Ok(await _service.PostSpecialUserSuperAsync(specialUser));
             }
             catch (Exception ex)
             {

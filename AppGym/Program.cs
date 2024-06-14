@@ -91,8 +91,6 @@ builder.Services.AddDbContext<AppGymContextDb>(options =>
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<ISpecialUserRepository, SpecialUserRepository>();
-builder.Services.AddScoped<ISpecialUserService, SpecialUserService>();
 builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
 builder.Services.AddScoped<IWorkoutService, WorkoutService>();
 builder.Services.AddScoped<ICustomWorkoutRepository, CustomWorkoutRepository>();

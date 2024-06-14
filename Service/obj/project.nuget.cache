@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ye78gxuw85k=",
+  "dgSpecHash": "VOxcGPodQ+o=",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuário\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\Usuário\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\jose-jwt\\5.0.0\\jose-jwt.5.0.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

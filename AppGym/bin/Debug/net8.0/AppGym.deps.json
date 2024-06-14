@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "AppGym/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Core": "1.6.0",
+          "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.6",
           "Microsoft.AspNetCore.OpenApi": "8.0.6",
@@ -19,6 +21,22 @@
         },
         "runtime": {
           "AppGym.dll": {}
+        }
+      },
+      "BCrypt.Net-Core/1.6.0": {
+        "runtime": {
+          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "1.6.0.0"
+          }
+        }
+      },
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -1035,6 +1053,8 @@
       },
       "Domain/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Core": "1.6.0",
+          "BCrypt.Net-Next": "4.0.3",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration": "8.0.0"
         },
@@ -1044,6 +1064,8 @@
       },
       "Infrastructure/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Core": "1.6.0",
+          "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.6",
           "Microsoft.Extensions.Configuration": "8.0.0"
@@ -1054,6 +1076,8 @@
       },
       "Service/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Core": "1.6.0",
+          "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
           "Infrastructure": "1.0.0",
           "Microsoft.Extensions.Configuration": "8.0.0",
@@ -1072,6 +1096,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BCrypt.Net-Core/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hsKiHGjrnlDW05MzuzzlD9gNP8YOW2KbZ+FbvISrilsKJJ76tXKhWey6psZX5sd7DczNpSU2U6ldjPoblk8BLw==",
+      "path": "bcrypt.net-core/1.6.0",
+      "hashPath": "bcrypt.net-core.1.6.0.nupkg.sha512"
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

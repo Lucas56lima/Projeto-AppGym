@@ -128,7 +128,50 @@ namespace Infrastructure.Repositories
                     throw new Exception("Erro ao acessar o banco de dados.", ex);
                 }
             }
+        }       
+
+        public async Task<User> PostSpecialUserAdminAsync(User specialUser)
+        {
+            /// </sumary>
+            try
+            {
+                await _context.Users.AddAsync(specialUser);
+                await _context.SaveChangesAsync();
+                return specialUser;
+            }
+            catch (SqliteException ex)
+            {
+                if (ex.SqliteErrorCode == 19)
+                {
+                    throw new Exception("Erro ao inserir usuário.", ex);
+                }
+                else
+                {
+                    throw new Exception("Erro ao acessar o banco de dados.", ex);
+                }
+            }
         }
-        
+
+        public async Task<User> PostSpecialUserSuperAsync(User specialUser)
+        {
+            try
+            {
+                await _context.Users.AddAsync(specialUser);
+                await _context.SaveChangesAsync();
+                return specialUser;
+            }
+            catch (SqliteException ex)
+            {
+                if (ex.SqliteErrorCode == 19)
+                {
+                    throw new Exception("Erro ao inserir usuário.", ex);
+                }
+                else
+                {
+                    throw new Exception("Erro ao acessar o banco de dados.", ex);
+                }
+            }
+        }
+
     }
 }

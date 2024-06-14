@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fAhjkS1jGYE=",
+  "dgSpecHash": "ZxZgdaSFsGg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\AppGym\\AppGym.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuário\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\Usuário\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\jose-jwt\\5.0.0\\jose-jwt.5.0.0.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.6\\microsoft.aspnetcore.authentication.jwtbearer.8.0.6.nupkg.sha512",

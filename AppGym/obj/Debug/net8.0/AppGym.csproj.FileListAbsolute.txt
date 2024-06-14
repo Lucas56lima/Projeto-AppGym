@@ -552,6 +552,8 @@ C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\AppGym.runtimeconfig.json
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\AppGym.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\AppGym.pdb
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\BCrypt.Net-Core.dll
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\jose-jwt.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
