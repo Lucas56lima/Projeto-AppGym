@@ -99,6 +99,8 @@ builder.Services.AddScoped<ICustomWorkoutDetailRepository, CustomWorkoutDetailRe
 builder.Services.AddScoped<ICustomWorkoutDetailService, CustomWorkoutDetailService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IEncryptionService,EncryptionService>();
+builder.Services.AddScoped<IPlanRepository, PlanRepository>();
+builder.Services.AddScoped<IPlanService, PlanService>();
 
 var app = builder.Build();
 

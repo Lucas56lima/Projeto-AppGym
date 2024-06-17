@@ -73,7 +73,7 @@ namespace Infrastructure.Repositories
             }
         }
         /// <summary>
-        /// Faz uma consulta na tabela Users e busca todos os treinos disponíveis
+        /// Faz uma consulta na tabela Users e busca todos os usuários disponíveis
         /// estão as informações adicionais dos usuários ativos com a clausula Where, retornando um 
         /// objeto User.
         /// </summary>
@@ -128,11 +128,16 @@ namespace Infrastructure.Repositories
                     throw new Exception("Erro ao acessar o banco de dados.", ex);
                 }
             }
-        }       
-
+        }
+        /// <summary>
+        /// Adiciona um novo Usuário Admin.
+        /// </summary>
+        /// <param name="specialUser">Objeto User contendo os detalhes do Usuário de Role Admin.</param>
+        /// <returns>Retorna o objeto Usuário adicionado.</returns>
+        /// </sumary>
         public async Task<User> PostSpecialUserAdminAsync(User specialUser)
         {
-            /// </sumary>
+            
             try
             {
                 await _context.Users.AddAsync(specialUser);
@@ -151,7 +156,11 @@ namespace Infrastructure.Repositories
                 }
             }
         }
-
+        /// <summary>
+        /// Adiciona um novo Usuário Super.
+        /// </summary>
+        /// <param name="specialUser">Objeto User contendo os detalhes do Usuário de Role Super.</param>
+        /// <returns>Retorna o objeto Usuário adicionado.</returns>
         public async Task<User> PostSpecialUserSuperAsync(User specialUser)
         {
             try

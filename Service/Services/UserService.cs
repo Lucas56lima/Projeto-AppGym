@@ -119,8 +119,7 @@ namespace Service.Services
             {
                 Console.WriteLine("E-mail já cadastrado");
                 return null;
-            }           
-            
+            }                     
         }
         public async Task<User> PostSpecialUserAdminAsync(User specialUser)
         {
