@@ -11,7 +11,7 @@
         "projectName": "Domain",
         "projectPath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Usuário\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

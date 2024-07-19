@@ -23,7 +23,8 @@ namespace Infrastructure.Migrations
                     Time = table.Column<int>(type: "INTEGER", nullable: false),
                     Interval = table.Column<int>(type: "INTEGER", nullable: false),
                     Sequence = table.Column<int>(type: "INTEGER", nullable: false),
-                    Combination = table.Column<int>(type: "INTEGER", nullable: false)
+                    Combination = table.Column<int>(type: "INTEGER", nullable: false),
+                    Active = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -95,23 +96,6 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "SpecialUsers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
-                    Email = table.Column<string>(type: "TEXT", nullable: true),
-                    Password = table.Column<string>(type: "TEXT", nullable: true),
-                    Role = table.Column<string>(type: "TEXT", nullable: true),
-                    Active = table.Column<bool>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_SpecialUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -179,12 +163,6 @@ namespace Infrastructure.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_SpecialUsers_Email",
-                table: "SpecialUsers",
-                column: "Email",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Users_Email_Fone",
                 table: "Users",
                 columns: new[] { "Email", "Fone" },
@@ -214,9 +192,6 @@ namespace Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Roles");
-
-            migrationBuilder.DropTable(
-                name: "SpecialUsers");
 
             migrationBuilder.DropTable(
                 name: "Users");

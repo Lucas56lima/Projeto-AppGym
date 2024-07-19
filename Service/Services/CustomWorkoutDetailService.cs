@@ -15,7 +15,7 @@ namespace Service.Services
         public async Task<IEnumerable<CustomWorkoutDetailViewModel>> GetAllCustomWorkoutsDetailsAsync()
         {
             return await _repository.GetAllCustomWorkoutsDetailsAsync();
-        }
+        }        
 
         public async Task<CustomWorkoutViewModel> GetCustomWorkoutDetailByNameAsync(string name)
         {
@@ -23,8 +23,10 @@ namespace Service.Services
         }
 
         public async Task<CustomWorkoutDetail> PostCustomWorkoutDetailAsync(CustomWorkoutDetail customWorkoutDetail)
-        {
+        {                    
+           
             return await _repository.PostCustomWorkoutDetailAsync(customWorkoutDetail);
         }
+        
     }
 }

@@ -38,5 +38,10 @@ namespace Service.Services
                 return null;
             }
         }
+
+        public Task<Plan> PutPlanByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

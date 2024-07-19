@@ -10,5 +10,6 @@
         public int Interval { get; set; }
         public int Sequence { get; set; }
         public int Combination { get; set; }
+        public bool Active { get; set; } = true;
     }
 }

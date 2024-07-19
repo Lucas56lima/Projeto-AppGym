@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AppGym.Controllers
 {
     /// <summary>
-    /// Controller responsável por operações relacionadas a usuários.
+    /// Controller responsável por operações relacionadas aos usuários.
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -18,12 +18,11 @@ namespace AppGym.Controllers
         {
             _service = service;
         }
-
         /// <summary>
         /// Registra um novo usuário.
         /// </summary>
         /// <param name="user">Os dados do usuário a serem registrados.</param>
-        /// <returns>O usuário recém-registrado.</returns>
+        /// <returns>O um Objeto User com o usuário recém-registrado.</returns>
         [HttpPost("RegisterUser")]
         public async Task<IActionResult> PostUserAsync([FromBody] User user)
         {
@@ -41,29 +40,17 @@ namespace AppGym.Controllers
         /// Obtém um usuário pelo seu ID.
         /// </summary>
         /// <param name="id">O ID do usuário.</param>
-        /// <returns>O usuário com o ID especificado.</returns>
-        [Authorize(Roles = "admin,super")]
+        /// <returns>O usuário com o ID especificado.</returns>        
         [HttpGet("ViewUserById/{id}")]
+        [Authorize(Roles = "admin,super")]
         public async Task<IActionResult> GetUserByIdAsync(int id)
         {
-            try
-            {
-                var user = await _service.GetUserByIdAsync(id);
-                if (user == null)
-                {
-                    return NotFound($"Usuário com ID {id} não encontrado");
-                }
-                return Ok(user);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Erro ao obter o usuário: {ex.Message}");
-            }
+            return Ok(await _service.GetUserByIdAsync(id));              
         }
         /// <summary>
         /// Registra um novo usuário Admin com autorização de um usuário Super ou Admin.
         /// </summary>
-        /// <param name="user">Os dados do usuário a serem registrados.</param>
+        /// <param name="specialUser">Os dados do usuário a serem registrados.</param>
         /// <returns>O usuário recém-registrado.</returns>
         [HttpPost("RegisterSpecialUserAdmin")]
         [Authorize(Roles = "super,admin")]

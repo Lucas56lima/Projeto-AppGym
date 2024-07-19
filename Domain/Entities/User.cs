@@ -5,7 +5,7 @@ namespace Domain.Entities
         public int Id{get;set;}
         public  string Name{get;set;}        
         public  string Email {get;set;}
-        public  string Password{get;set;}
+        public  string Password{get;set;}        
         public  string Fone {get;set;}
         public DateTime Birthday {get;set;}
         public string SpecialCondition {get;set;}
@@ -13,8 +13,6 @@ namespace Domain.Entities
         public DateTime AccessionDate {get;set;}
         public int PaymentId {get;set;}
         public string Role {get;set;}
-        public bool Active { get; set; } = true;
-        public string DateFormated => Birthday.ToString("yyyy-MM-dd");
-                      
+        public bool Active { get; set; } = true;                              
     }
 }

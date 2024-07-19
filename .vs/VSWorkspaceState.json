@@ -2,11 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\AppGym",
-    "\\Domain",
-    "\\Domain\\Interface",
-    "\\Service",
-    "\\Service\\Services"
+    "\\AppGym\\Controllers",
+    "\\Infrastructure\\Repositories"
   ],
-  "SelectedNode": "\\Domain\\Interface\\IUserService.cs",
+  "SelectedNode": "\\AppGym\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
 }

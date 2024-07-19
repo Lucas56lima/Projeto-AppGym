@@ -2,6 +2,7 @@
 using Domain.Interface;
 using Domain.Viewmodel;
 using Infrastructure.Context;
+using Infrastructure.Handler;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
@@ -50,11 +51,18 @@ namespace Infrastructure.Repositories
                                                Sequence = combined.customWorkoutDetails.Sequence
                                            }).ToListAsync();
             }
-            catch (DbUpdateException ex)
+            catch (SqliteException ex)
             {
-                throw new Exception("Erro ao recuperar os treinos do banco de dados", ex);
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
             }
         }
+       
 
         /// <summary>
         /// Faz uma consulta utilizando inner join partindo da Tabela Workout onde estão
@@ -96,14 +104,13 @@ namespace Infrastructure.Repositories
             }
             catch (SqliteException ex)
             {
-                if (ex.ErrorCode == 100)
-                {
-                    throw new Exception("Não há treinos personalizados cadastrados.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
             }
         }
 
@@ -118,7 +125,7 @@ namespace Infrastructure.Repositories
             ///Try valida se a conexão é válida ou se os dados foram inseridos com sucesso.
             /// </sumary>
             try
-            {
+            {                
                 await _context.AddAsync(customWorkoutDetail);
                 //await _workoutRepository.PutWorkoutAsync(customWorkoutDetail.CustomWorkoutId, customWorkoutDetail.WorkoutId);
                 await _context.SaveChangesAsync();
@@ -126,15 +133,16 @@ namespace Infrastructure.Repositories
             }
             catch (SqliteException ex)
             {
-                if (ex.SqliteErrorCode == 19)
-                {
-                    throw new Exception("Erro ao inserir Treino personalizado.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
-            }            
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
+            }
         }
+       
     }
 }
+

@@ -1,6 +1,5 @@
 ﻿using Domain.Entities;
 using Domain.Interface;
-using Infrastructure.Repositories;
 
 namespace Service.Services
 {
@@ -22,9 +21,34 @@ namespace Service.Services
             return await _repository.GetCustomWorkoutByIdAsync(id);
         }
 
-        public async Task<CustomWorkout> PostCustomWorkoutAsync(CustomWorkout customWorkout)
+        public async Task<CustomWorkout> GetCustomWorkoutByNameAsync(string name)
         {
+            return await _repository.GetCustomWorkoutByNameAsync(name);
+        }
+
+        public async Task<CustomWorkout?> PostCustomWorkoutAsync(CustomWorkout customWorkout)
+        {
+            var customWorkoutDb = await _repository.GetCustomWorkoutByNameAsync(customWorkout.CustomWorkoutName);
+            if (customWorkoutDb != null)
+            {
+                return null;
+            }
+
             return await _repository.PostCustomWorkoutAsync(customWorkout);
+        }
+
+        public async Task<CustomWorkout> PutCustomWorkoutAsync(int id, CustomWorkout newCustomWorkout)
+        {
+            var customWorkout = await GetCustomWorkoutByIdAsync(id);
+            newCustomWorkout.CustomWorkoutId = customWorkout.CustomWorkoutId;
+            newCustomWorkout.ImplementationDate = customWorkout.ImplementationDate;
+            newCustomWorkout.ExpirationDate = customWorkout.ExpirationDate;            
+            return await _repository.PutCustomWorkoutAsync(id, newCustomWorkout); 
+        }
+
+        public Task<string> PutCustomWorkoutInTableDetailsAsync(int id)
+        {
+            return _repository.PutCustomWorkoutInTableDetailsAsync(id);
         }
     }
 }

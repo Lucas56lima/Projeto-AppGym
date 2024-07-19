@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\infrastructure\\repositories\\workoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\workoutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\appgym\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\domain\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\service\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\service\\services\\encryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\encryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\domain\\interface\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,35 +33,69 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interface\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IUserRepository.cs",
-              "RelativeToolTip": "Domain\\Interface\\IUserRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T17:32:04.236Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WorkoutRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Repositories\\WorkoutRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\WorkoutRepository.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Repositories\\WorkoutRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\WorkoutRepository.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAIwHgAAAAtAAAA",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AppGym\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AppGym\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAUwCQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T18:36:28.405Z",
+              "WhenOpened": "2024-07-19T18:05:27.772Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEncryptionService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IEncryptionService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IEncryptionService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IEncryptionService.cs",
+              "RelativeToolTip": "Domain\\Interface\\IEncryptionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T17:39:05.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EncryptionService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\EncryptionService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\EncryptionService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\EncryptionService.cs",
+              "RelativeToolTip": "Service\\Services\\EncryptionService.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAQwB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T17:34:04.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\UserService.cs",
+              "RelativeToolTip": "Service\\Services\\UserService.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAQwFAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T17:31:57.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T17:17:54.52Z"
             }
           ]
         }

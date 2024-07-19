@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppGymContextDb))]
-    [Migration("20240613153012_AppGymDbInitialTables")]
+    [Migration("20240718191743_AppGymDbInitialTables")]
     partial class AppGymDbInitialTables
     {
         /// <inheritdoc />
@@ -59,6 +59,9 @@ namespace Infrastructure.Migrations
                 {
                     b.Property<int>("CustomWorkoutDetailId")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Active")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Combination")
@@ -154,35 +157,6 @@ namespace Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Roles");
-                });
-
-            modelBuilder.Entity("Domain.Entities.SpecialUser", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("Active")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Password")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Role")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Email")
-                        .IsUnique();
-
-                    b.ToTable("SpecialUsers");
                 });
 
             modelBuilder.Entity("Domain.Entities.User", b =>

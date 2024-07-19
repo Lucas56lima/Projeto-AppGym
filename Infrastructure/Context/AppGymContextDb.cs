@@ -34,10 +34,7 @@ namespace Infrastructure.Context
                 .IsUnique();           
             modelBuilder.Entity<Roles>()
                 .HasIndex(r => r.Name)
-                .IsUnique();
-            modelBuilder.Entity<CustomWorkoutDetail>()
-                .HasIndex(cwd => cwd.Combination)
-                .IsUnique();
+                .IsUnique();            
         }
 
     }

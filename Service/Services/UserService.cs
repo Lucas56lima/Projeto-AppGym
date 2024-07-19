@@ -14,25 +14,31 @@ namespace Service.Services
             _userRepository = userRepository;
             _encryptionService = encryptionService;
         }
-        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        public async Task<IEnumerable<User>?> GetAllUsersAsync()
         {
-            var users = await _userRepository.GetAllUsersAsync();
+            var users = await _userRepository.GetAllUsersAsync();            
+            List<User> usersDecrypters = new List<User>();
             if (users != null)
             {
-                //var decryptedUser = new User
-                //{
-                //    Name = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Name)),
-                //    Email = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Email)),
-                //    Password = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Password)),
-                //    Fone = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Fone)),
-                //    Birthday = encryptedUser.Birthday,
-                //    SpecialCondition = encryptedUser.SpecialCondition,
-                //    Plan = encryptedUser.Plan,
-                //    AccessionDate = encryptedUser.AccessionDate,
-                //    PaymentId = encryptedUser.PaymentId,
-                //    Role = encryptedUser.Role,
-                return users;
-
+                foreach(User user in users )
+                {
+                    string[] emailParts = user.Email.Split("@");
+                    var decryptedUser = new User
+                    {
+                        Name = await _encryptionService.Decrypt(user.Name),
+                        Email = await _encryptionService.Decrypt(emailParts[0]) + "@" + emailParts[1],
+                        Password = await _encryptionService.Decrypt(user.Password),
+                        Fone = await _encryptionService.Decrypt(user.Fone),
+                        Birthday = user.Birthday,
+                        SpecialCondition = user.SpecialCondition,
+                        Plan = user.Plan,
+                        AccessionDate = user.AccessionDate,
+                        PaymentId = user.PaymentId,
+                        Role = user.Role
+                    };
+                    usersDecrypters.Add(decryptedUser);               
+                }
+                return usersDecrypters;
             }
             else
             {
@@ -40,24 +46,26 @@ namespace Service.Services
             }        
         }
 
-        public async Task<User> GetUserByEmailAsync(string email)
+        public async Task<User?> GetUserByEmailAsync(string email)
         {
             var user = await _userRepository.GetUserByEmailAsync(email);
-            if (user != null)
+            string[] emailParts = user.Email.Split("@");
+            if (user != null && emailParts.Length == 2)
             {
-                //var decryptedUser = new User
-                //{
-                //    Name = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Name)),
-                //    Email = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Email)),
-                //    Password = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Password)),
-                //    Fone = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Fone)),
-                //    Birthday = encryptedUser.Birthday,
-                //    SpecialCondition = encryptedUser.SpecialCondition,
-                //    Plan = encryptedUser.Plan,
-                //    AccessionDate = encryptedUser.AccessionDate,
-                //    PaymentId = encryptedUser.PaymentId,
-                //    Role = encryptedUser.Role,
-                return user;
+                User decryptedUser = new User
+                {
+                    Name = await _encryptionService.Decrypt(user.Name),
+                    Email = await _encryptionService.Decrypt(emailParts[0]) + "@" + emailParts[1],
+                    Password = await _encryptionService.Decrypt(user.Password),
+                    Fone = await _encryptionService.Decrypt(user.Fone),
+                    Birthday = user.Birthday,
+                    SpecialCondition = user.SpecialCondition,
+                    Plan = user.Plan,
+                    AccessionDate = user.AccessionDate,
+                    PaymentId = user.PaymentId,
+                    Role = user.Role
+                };
+                return decryptedUser;
 
             }
             else
@@ -67,24 +75,26 @@ namespace Service.Services
 
         }
 
-        public async Task<User> GetUserByIdAsync(int id)
+        public async Task<User?> GetUserByIdAsync(int id)
         {
             var user = await _userRepository.GetUserByIdAsync(id);
-            if (user != null)
+            string[] emailParts = user.Email.Split("@");
+            if (user != null && emailParts.Length == 2)
             {
-                //var decryptedUser = new User
-                //{
-                //    Name = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Name)),
-                //    Email = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Email)),
-                //    Password = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Password)),
-                //    Fone = await _encryptionService.Decrypt(Encoding.UTF8.GetBytes(encryptedUser.Fone)),
-                //    Birthday = encryptedUser.Birthday,
-                //    SpecialCondition = encryptedUser.SpecialCondition,
-                //    Plan = encryptedUser.Plan,
-                //    AccessionDate = encryptedUser.AccessionDate,
-                //    PaymentId = encryptedUser.PaymentId,
-                //    Role = encryptedUser.Role,
-                return user;              
+                User decryptedUser = new User
+                {
+                    Name = await _encryptionService.Decrypt(user.Name),
+                    Email = await _encryptionService.Decrypt(emailParts[0]) + "@" + emailParts[1],
+                    Password = await _encryptionService.Decrypt(user.Password),
+                    Fone = await _encryptionService.Decrypt(user.Fone),
+                    Birthday = user.Birthday,
+                    SpecialCondition = user.SpecialCondition,
+                    Plan = user.Plan,
+                    AccessionDate = user.AccessionDate,
+                    PaymentId = user.PaymentId,
+                    Role = user.Role
+                };
+                return decryptedUser;              
                 
             }
             else
@@ -95,25 +105,26 @@ namespace Service.Services
         /*
             Validação da rota que adiciona Usuário para não permitir e-mail duplicado. 
         */
-        public async Task<User> PostUserAsync(User user)
+        public async Task<User?> PostUserAsync(User user)
         {
             var emailDb = await GetUserByEmailAsync(user.Email);
             if (emailDb == null) 
             {
-                //string encryptedName = await _encryptionService.Encrypt(BitConverter.ToString(Encoding.UTF8.GetBytes(user.Name)))
-                //var decryptedUser = new User
-                //{
-                //    Name = await _encryptionService.Encrypt(BitConverter.ToString(Encoding.UTF8.GetBytes(user.Name))),
-                //    Email = await _encryptionService.Encrypt(Encoding.UTF8.GetBytes(user.Email)),
-                //    Password = await _encryptionService.Encrypt(Encoding.UTF8.GetBytes(user.Password)),
-                //    Fone = await _encryptionService.Encrypt(Encoding.UTF8.GetBytes(user.Fone)),
-                //    Birthday = user.Birthday,
-                //    SpecialCondition = user.SpecialCondition,
-                //    Plan = user.Plan,
-                //    AccessionDate = user.AccessionDate,
-                //    PaymentId = user.PaymentId,
-                //    Role = user.Role,
-                return await _userRepository.PostUserAsync(user);
+                string[] emailParts = user.Email.Split("@");                
+                User encryptedUser = new User
+                {
+                    Name = await _encryptionService.Encrypt(user.Name),
+                    Email = await _encryptionService.Encrypt(emailParts[0]) + "@" + emailParts[1],
+                    Password = await _encryptionService.Encrypt(user.Password),
+                    Fone = await _encryptionService.Encrypt(user.Fone),
+                    Birthday = user.Birthday,
+                    SpecialCondition = user.SpecialCondition,
+                    Plan = user.Plan,
+                    AccessionDate = user.AccessionDate,
+                    PaymentId = user.PaymentId,
+                    Role = user.Role
+                };
+                return await _userRepository.PostUserAsync(encryptedUser);
             }                                         
             else
             {
@@ -121,13 +132,26 @@ namespace Service.Services
                 return null;
             }                     
         }
-        public async Task<User> PostSpecialUserAdminAsync(User specialUser)
+        public async Task<User?> PostSpecialUserAdminAsync(User specialUser)
         {
             var specialUserEmailDb = await _userRepository.GetUserByEmailAsync(specialUser.Email);
             if (specialUserEmailDb == null)
             {
-                specialUser.Role = "admin";
-                return await _userRepository.PostSpecialUserAdminAsync(specialUser);
+                string[] emailParts = specialUser.Email.Split("@");
+                User encryptedUser = new User
+                {
+                    Name = await _encryptionService.Encrypt(specialUser.Name),
+                    Email = await _encryptionService.Encrypt(emailParts[0]) + "@" + emailParts[1],
+                    Password = await _encryptionService.Encrypt(specialUser.Password),
+                    Fone = await _encryptionService.Encrypt(specialUser.Fone),
+                    Birthday = specialUser.Birthday,
+                    SpecialCondition = null,
+                    Plan = null,
+                    AccessionDate = specialUser.AccessionDate,
+                    PaymentId = 0,
+                    Role = "admin"
+                };
+                return await _userRepository.PostSpecialUserAdminAsync(encryptedUser);
             }
             else
             {
@@ -135,14 +159,27 @@ namespace Service.Services
             }
         }
 
-        public async Task<User> PostSpecialUserSuperAsync(User specialUser)
+        public async Task<User?> PostSpecialUserSuperAsync(User specialUser)
         {
 
             var specialUserEmailDb = await _userRepository.GetUserByEmailAsync(specialUser.Email);
             if (specialUserEmailDb == null)
             {
-                specialUser.Role = "super";
-                return await _userRepository.PostSpecialUserSuperAsync(specialUser);
+                string[] emailParts = specialUser.Email.Split("@");
+                User encryptedUser = new User
+                {
+                    Name = await _encryptionService.Encrypt(specialUser.Name),
+                    Email = await _encryptionService.Encrypt(emailParts[0]) + "@" + emailParts[1],
+                    Password = await _encryptionService.Encrypt(specialUser.Password),
+                    Fone = await _encryptionService.Encrypt(specialUser.Fone),
+                    Birthday = specialUser.Birthday,
+                    SpecialCondition = null,
+                    Plan = null,
+                    AccessionDate = specialUser.AccessionDate,
+                    PaymentId = 0,
+                    Role = "super"
+                };
+                return await _userRepository.PostSpecialUserSuperAsync(encryptedUser);
             }
             else
             {

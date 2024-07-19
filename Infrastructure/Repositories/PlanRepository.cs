@@ -116,5 +116,10 @@ namespace Infrastructure.Repositories
                 }
             }
         }
+
+        public Task<Plan> PutPlanByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

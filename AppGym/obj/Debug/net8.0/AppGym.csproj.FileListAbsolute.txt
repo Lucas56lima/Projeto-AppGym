@@ -545,6 +545,13 @@ C:\Users\Lucas Lima\source\repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net
 C:\Users\Lucas Lima\source\repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.pdb
 C:\Users\Lucas Lima\source\repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.genruntimeconfig.cache
 C:\Users\Lucas Lima\source\repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\ref\AppGym.dll
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.csproj.AssemblyReference.cache
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.AssemblyInfoInputs.cache
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.AssemblyInfo.cs
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.sourcelink.json
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\appsettings.json
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\AppGym.exe
@@ -590,7 +597,10 @@ C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Z.EntityFramework.Extensions.EFCore.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -669,14 +679,7 @@ C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Domain.pdb
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Service.pdb
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Infrastructure.pdb
-C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.csproj.AssemblyReference.cache
-C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.AssemblyInfoInputs.cache
-C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.AssemblyInfo.cs
-C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.csproj.CoreCompileInputs.cache
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.sourcelink.json
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\staticwebassets\msbuild.AppGym.Microsoft.AspNetCore.StaticWebAssets.props
