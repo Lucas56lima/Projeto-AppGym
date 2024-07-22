@@ -24,6 +24,8 @@ namespace AppGym.Controllers
         /// <param name="user">Os dados do usuário a serem registrados.</param>
         /// <returns>O um Objeto User com o usuário recém-registrado.</returns>
         [HttpPost("RegisterUser")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> PostUserAsync([FromBody] User user)
         {
             try
@@ -41,8 +43,10 @@ namespace AppGym.Controllers
         /// </summary>
         /// <param name="id">O ID do usuário.</param>
         /// <returns>O usuário com o ID especificado.</returns>        
-        [HttpGet("ViewUserById/{id}")]
-        [Authorize(Roles = "admin,super")]
+        [HttpPost("ViewUserById/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Authorize(Roles = "super,admin")]
         public async Task<IActionResult> GetUserByIdAsync(int id)
         {
             return Ok(await _service.GetUserByIdAsync(id));              
@@ -53,6 +57,8 @@ namespace AppGym.Controllers
         /// <param name="specialUser">Os dados do usuário a serem registrados.</param>
         /// <returns>O usuário recém-registrado.</returns>
         [HttpPost("RegisterSpecialUserAdmin")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Authorize(Roles = "super,admin")]
         public async Task<IActionResult> PostSpecialUserAdminAsync(User specialUser)
         {
@@ -62,11 +68,13 @@ namespace AppGym.Controllers
             }
             catch(Exception ex)
             {
-                return StatusCode(500, $"Erro ao obter o usuário: {ex.Message}");
+                return StatusCode(500, $"Erro ao registrar o usuário: {ex.Message}");
             }
            
         }
         [HttpPost("RegisterSpecialUserSuper")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Authorize(Roles = "super")]
         /// <summary>
         /// Registra um novo usuário Super com autorização somente para outro Super.
@@ -81,7 +89,7 @@ namespace AppGym.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Erro ao obter o usuário: {ex.Message}");
+                return StatusCode(500, $"Erro ao registrar o usuário: {ex.Message}");
             }
         }
     }

@@ -10,7 +10,7 @@ namespace AppGym.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles ="admin,super,user")]
+    [Authorize]
     public class WorkoutController : ControllerBase
     {
         private readonly IWorkoutService _service;
@@ -46,7 +46,7 @@ namespace AppGym.Controllers
         /// <param name="id">O ID do treino.</param>
         /// <returns>Um Objeto Workout com o treino com o ID especificado.</returns>
         [HttpGet("ViewWorkoutById/{id}")]
-        [Authorize(Roles = "super")]
+        [Authorize(Roles = "admin,super")]
         public async Task<IActionResult> GetWorkoutByIdAsync(int id)
         {
             return Ok(await _service.GetWorkoutByIdAsync(id));

@@ -25,7 +25,7 @@ namespace Service.Services
             return await _planRepository.GetPlanByNameAsync(name);
         }
 
-        public async Task<Plan> PostPlanAsync(Plan plan)
+        public async Task<Plan?> PostPlanAsync(Plan plan)
         {
             var planDb = await _planRepository.GetPlanByNameAsync(plan.Name);
             if (planDb == null)

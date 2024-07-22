@@ -10,7 +10,7 @@ namespace AppGym.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles ="admin,super,user")]
+    [Authorize]
     public class CustomWorkoutController : ControllerBase
     {
         private readonly ICustomWorkoutService _service;
