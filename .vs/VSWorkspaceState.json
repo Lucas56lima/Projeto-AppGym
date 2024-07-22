@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\AppGym",
-    "\\AppGym\\Controllers",
-    "\\Infrastructure\\Repositories"
+    "\\AppGym\\Controllers"
   ],
   "SelectedNode": "\\AppGym\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
