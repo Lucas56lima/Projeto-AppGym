@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\domain\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\appgym\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\infrastructure\\migrations\\20240718191743_appgymdbinitialtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20240718191743_appgymdbinitialtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +74,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "Domain\\Interface\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IPaymentService.cs",
+              "RelativeToolTip": "Domain\\Interface\\IPaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T18:22:30.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Program.cs",
+              "RelativeDocumentMoniker": "AppGym\\Program.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Program.cs",
+              "RelativeToolTip": "AppGym\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T17:23:48.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\PaymentService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\PaymentService.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\PaymentService.cs",
               "RelativeToolTip": "Service\\Services\\PaymentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAYwC8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T15:36:21.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "20240718191743_AppGymDbInitialTables.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Migrations\\20240718191743_AppGymDbInitialTables.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20240718191743_AppGymDbInitialTables.cs",
@@ -87,11 +121,12 @@
               "RelativeToolTip": "Infrastructure\\Migrations\\20240718191743_AppGymDbInitialTables.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T15:35:53.7Z"
+              "WhenOpened": "2024-07-24T15:35:53.7Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PlanService.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\PlanService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\PlanService.cs",
@@ -99,11 +134,12 @@
               "RelativeToolTip": "Service\\Services\\PlanService.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAIwCsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:42:13.092Z"
+              "WhenOpened": "2024-07-22T15:42:13.092Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CustomWorkoutService.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\CustomWorkoutService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\CustomWorkoutService.cs",
@@ -111,23 +147,25 @@
               "RelativeToolTip": "Service\\Services\\CustomWorkoutService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:10:14.437Z"
+              "WhenOpened": "2024-07-22T15:10:14.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CustomWorkoutDetailService.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\CustomWorkoutDetailService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\CustomWorkoutDetailService.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\CustomWorkoutDetailService.cs",
               "RelativeToolTip": "Service\\Services\\CustomWorkoutDetailService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAABRwBYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:10:11.496Z"
+              "WhenOpened": "2024-07-22T15:10:11.496Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CustomWorkoutDetailController.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\CustomWorkoutDetailController.cs",
               "RelativeDocumentMoniker": "AppGym\\Controllers\\CustomWorkoutDetailController.cs",
@@ -135,11 +173,12 @@
               "RelativeToolTip": "AppGym\\Controllers\\CustomWorkoutDetailController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:04:45.728Z"
+              "WhenOpened": "2024-07-22T15:04:45.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "PlanController.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\PlanController.cs",
               "RelativeDocumentMoniker": "AppGym\\Controllers\\PlanController.cs",
@@ -147,11 +186,12 @@
               "RelativeToolTip": "AppGym\\Controllers\\PlanController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:00:29.543Z"
+              "WhenOpened": "2024-07-22T15:00:29.543Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "EncryptionService.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\EncryptionService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\EncryptionService.cs",
@@ -159,11 +199,12 @@
               "RelativeToolTip": "Service\\Services\\EncryptionService.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAowFgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T17:34:04.215Z"
+              "WhenOpened": "2024-07-19T17:34:04.215Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "IEncryptionService.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IEncryptionService.cs",
               "RelativeDocumentMoniker": "Domain\\Interface\\IEncryptionService.cs",
@@ -171,11 +212,12 @@
               "RelativeToolTip": "Domain\\Interface\\IEncryptionService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T17:39:05.959Z"
+              "WhenOpened": "2024-07-19T17:39:05.959Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
@@ -183,7 +225,8 @@
               "RelativeToolTip": "Domain\\Entities\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-19T17:17:54.52Z"
+              "WhenOpened": "2024-07-19T17:17:54.52Z",
+              "EditorCaption": ""
             }
           ]
         }

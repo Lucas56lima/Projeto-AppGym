@@ -27,7 +27,7 @@ namespace Service.Services
             var customerOptions = new CustomerCreateOptions
             {
                 Email = email,
-                Name = "Lucas Lima",
+                Name = name,
                 PaymentMethod = "card"
             };
             
