@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\AppGym",
-    "\\AppGym\\Controllers"
+    "\\AppGym\\Controllers",
+    "\\Service",
+    "\\Service\\Services"
   ],
-  "SelectedNode": "\\AppGym\\Controllers\\CustomWorkoutDetailController.cs",
+  "SelectedNode": "\\Service\\Services\\PaymentService.cs",
   "PreviewInSolutionExplorer": false
 }

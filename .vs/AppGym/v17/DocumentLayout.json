@@ -1,41 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\",
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\appgym\\controllers\\customworkoutdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\service\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\infrastructure\\migrations\\20240718191743_appgymdbinitialtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20240718191743_appgymdbinitialtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\appgym\\controllers\\customworkoutdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\controllers\\customworkoutdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\service\\services\\customworkoutdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\service\\services\\customworkoutdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\customworkoutdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\service\\services\\customworkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\service\\services\\customworkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\customworkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\infrastructure\\handler\\errorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D62B607-D9D2-4AB6-B4C9-0C837DAC336A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\handler\\errorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\service\\services\\planservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\service\\services\\planservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\planservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\service\\services\\encryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\service\\services\\encryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24EC7417-B271-4FF4-906A-FDC7F1E0F00D}|Service\\Service.csproj|solutionrelative:service\\services\\encryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\appgym\\controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\appgym\\controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7AD29C64-4EFC-4221-8AB2-857DE45031BD}|AppGym\\AppGym.csproj|solutionrelative:appgym\\controllers\\plancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\domain\\interface\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\domain\\interface\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\interface\\iencryptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\project-appgym\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\lucas56lima\\project-appgym\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69BA2AE8-E330-467A-AB7C-8D7932725F93}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,19 +50,52 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\PaymentService.cs",
+              "RelativeToolTip": "Service\\Services\\PaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T15:36:21.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240718191743_AppGymDbInitialTables.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Migrations\\20240718191743_AppGymDbInitialTables.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20240718191743_AppGymDbInitialTables.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Migrations\\20240718191743_AppGymDbInitialTables.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20240718191743_AppGymDbInitialTables.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T15:35:53.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PlanService.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\PlanService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\PlanService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\PlanService.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\PlanService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\PlanService.cs",
               "RelativeToolTip": "Service\\Services\\PlanService.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAIwCsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -66,23 +103,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ErrorHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Infrastructure\\Handler\\ErrorHandler.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Handler\\ErrorHandler.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Infrastructure\\Handler\\ErrorHandler.cs",
-              "RelativeToolTip": "Infrastructure\\Handler\\ErrorHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:23:55.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CustomWorkoutService.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\CustomWorkoutService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\CustomWorkoutService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\CustomWorkoutService.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\CustomWorkoutService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\CustomWorkoutService.cs",
               "RelativeToolTip": "Service\\Services\\CustomWorkoutService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,11 +115,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CustomWorkoutDetailService.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\CustomWorkoutDetailService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\CustomWorkoutDetailService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\CustomWorkoutDetailService.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\CustomWorkoutDetailService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\CustomWorkoutDetailService.cs",
               "RelativeToolTip": "Service\\Services\\CustomWorkoutDetailService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -102,24 +127,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CustomWorkoutDetailController.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\CustomWorkoutDetailController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\CustomWorkoutDetailController.cs",
               "RelativeDocumentMoniker": "AppGym\\Controllers\\CustomWorkoutDetailController.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\CustomWorkoutDetailController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\CustomWorkoutDetailController.cs",
               "RelativeToolTip": "AppGym\\Controllers\\CustomWorkoutDetailController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:04:45.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-22T15:04:45.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PlanController.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\PlanController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\PlanController.cs",
               "RelativeDocumentMoniker": "AppGym\\Controllers\\PlanController.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\AppGym\\Controllers\\PlanController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\AppGym\\Controllers\\PlanController.cs",
               "RelativeToolTip": "AppGym\\Controllers\\PlanController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -127,11 +151,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EncryptionService.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\EncryptionService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\EncryptionService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\EncryptionService.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Service\\Services\\EncryptionService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Service\\Services\\EncryptionService.cs",
               "RelativeToolTip": "Service\\Services\\EncryptionService.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAowFgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -139,11 +163,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IEncryptionService.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Domain\\Interface\\IEncryptionService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IEncryptionService.cs",
               "RelativeDocumentMoniker": "Domain\\Interface\\IEncryptionService.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Domain\\Interface\\IEncryptionService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Interface\\IEncryptionService.cs",
               "RelativeToolTip": "Domain\\Interface\\IEncryptionService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -151,11 +175,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Domain\\Entities\\User.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Project-AppGym\\Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\Lucas56lima\\Project-AppGym\\Domain\\Entities\\User.cs",
               "RelativeToolTip": "Domain\\Entities\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

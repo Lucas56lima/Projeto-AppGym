@@ -7,7 +7,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Service.Services;
+using Stripe;
 using System.Text;
+using PlanService = Service.Services.PlanService;
+using TokenService = Service.Services.TokenService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+StripeConfiguration.ApiKey = "sk_test_51PIZ3R05taSXSw8O1ywANBHfrBDXYU9OxTqQCj465U9mYTkW9InUyVrA9niC1vCzQ9n7XixEPnoE3wH7iUhKrKNx00lL1NqCcn";
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc(name: "v1", new OpenApiInfo()

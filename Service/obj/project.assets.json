@@ -474,6 +474,19 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -735,6 +748,23 @@
         },
         "runtime": {
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "Stripe.net/45.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections/4.3.0": {
@@ -2019,6 +2049,37 @@
         "runtime.json"
       ]
     },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "sha512": "7VSGO0URRKoMEAq0Sc9cRz8mb6zbyx/BZDEWhgPdzzpmFhkam3fJ1DAGWFXBI4nGlma+uPKpfuMQP5LXRnOH5g==",
       "type": "package",
@@ -2288,6 +2349,30 @@
         "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll",
         "sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
         "sqlitepclraw.provider.e_sqlite3.nuspec"
+      ]
+    },
+    "Stripe.net/45.4.0": {
+      "sha512": "KybqG8DAGw67jGyYcZqEKDT50P9mPh5lbA2ClFu768A79gKmnXc2fwqHW6Ik5x4nvxxF5d82EHBZnPHZTWFuFw==",
+      "type": "package",
+      "path": "stripe.net/45.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.xml",
+        "lib/net5.0/Stripe.net.dll",
+        "lib/net5.0/Stripe.net.xml",
+        "lib/net6.0/Stripe.net.dll",
+        "lib/net6.0/Stripe.net.xml",
+        "lib/netcoreapp3.1/Stripe.net.dll",
+        "lib/netcoreapp3.1/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.45.4.0.nupkg.sha512",
+        "stripe.net.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -4051,6 +4136,7 @@
       "Infrastructure >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 8.0.0",
       "Microsoft.IdentityModel.Tokens >= 7.6.0",
+      "Stripe.net >= 45.4.0",
       "System.IdentityModel.Tokens.Jwt >= 7.6.0",
       "jose-jwt >= 5.0.0"
     ]
@@ -4062,11 +4148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuário\\source\\repos\\Project-AppGym\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\Usuário\\source\\repos\\Project-AppGym\\Service\\Service.csproj",
+      "projectPath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuário\\source\\repos\\Project-AppGym\\Service\\obj\\",
+      "outputPath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4088,11 +4174,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Usuário\\source\\repos\\Project-AppGym\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Usuário\\source\\repos\\Project-AppGym\\Domain\\Domain.csproj"
+            "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Usuário\\source\\repos\\Project-AppGym\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Usuário\\source\\repos\\Project-AppGym\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\Source\\Repos\\Lucas56lima\\Project-AppGym\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -4127,6 +4213,10 @@
           "Microsoft.IdentityModel.Tokens": {
             "target": "Package",
             "version": "[7.6.0, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[45.4.0, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
