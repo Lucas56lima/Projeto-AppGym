@@ -1,6 +1,7 @@
 using Domain.Entities;
 using Domain.Interface;
 using Infrastructure.Context;
+using Infrastructure.Handler;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,14 +33,13 @@ namespace Infrastructure.Repositories
             }
             catch (SqliteException ex)
             {
-                if (ex.ErrorCode == 100)
-                {
-                    throw new Exception("Não há usuários cadastrados.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
             }
         }
         /// <summary>
@@ -62,14 +62,13 @@ namespace Infrastructure.Repositories
             }
             catch (SqliteException ex)
             {
-                if (ex.ErrorCode == 100)
-                {
-                    throw new Exception("Não há usuários cadastrados.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
             }
         }
         /// <summary>
@@ -90,14 +89,13 @@ namespace Infrastructure.Repositories
             }
             catch (SqliteException ex)
             {
-                if (ex.ErrorCode == 100)
-                {
-                    throw new Exception("Não há usuários cadastrados.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
             }
 
         }
@@ -119,14 +117,13 @@ namespace Infrastructure.Repositories
             }
             catch (SqliteException ex)
             {
-                if (ex.SqliteErrorCode == 19)
-                {
-                    throw new Exception("Erro ao inserir usuário.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
             }
         }
         /// <summary>
@@ -171,14 +168,13 @@ namespace Infrastructure.Repositories
             }
             catch (SqliteException ex)
             {
-                if (ex.SqliteErrorCode == 19)
-                {
-                    throw new Exception("Erro ao inserir usuário.", ex);
-                }
-                else
-                {
-                    throw new Exception("Erro ao acessar o banco de dados.", ex);
-                }
+                ErrorHandler.HandlerSqliteException(ex);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorHandler.HandleException(ex);
+                return null;
             }
         }
 

@@ -20,6 +20,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 StripeConfiguration.ApiKey = "sk_test_51PIZ3R05taSXSw8O1ywANBHfrBDXYU9OxTqQCj465U9mYTkW9InUyVrA9niC1vCzQ9n7XixEPnoE3wH7iUhKrKNx00lL1NqCcn";
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc(name: "v1", new OpenApiInfo()
@@ -105,6 +106,8 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IEncryptionService,EncryptionService>();
 builder.Services.AddScoped<IPlanRepository, PlanRepository>();
 builder.Services.AddScoped<IPlanService, PlanService>();
+builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 var app = builder.Build();
 

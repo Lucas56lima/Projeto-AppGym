@@ -11,26 +11,24 @@ namespace Service.Services
     public class TokenService : ITokenService
     {
         private readonly IConfiguration _configuration;
-        private readonly IUserRepository _userRepository;
+        private readonly IUserService _userService;
        
         private Timer _timer;
-        public TokenService (IConfiguration configuration, IUserRepository userRepository)
+        public TokenService (IConfiguration configuration, IUserService userService)
            
         {
             _configuration = configuration;
-            _userRepository = userRepository;            
+            _userService = userService;            
         }        
 
         public async Task<string> GenerateToken(Login login)
         {
-            var userDatabase = await _userRepository.GetUserByEmailAsync(login.Email);
-            
-
+            var userDatabase = await _userService.GetUserByEmailAsync(login.Email);
+            Console.WriteLine(userDatabase.Name);
             // Check if valid user credentials
             if (userDatabase == null || login.Email != userDatabase.Email && login.Password != userDatabase.Password)
-            {                
-                    return string.Empty;
-                
+            {
+                return string.Empty;
             }
 
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"] ?? string.Empty));

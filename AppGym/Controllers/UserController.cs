@@ -43,13 +43,22 @@ namespace AppGym.Controllers
         /// </summary>
         /// <param name="id">O ID do usuário.</param>
         /// <returns>O usuário com o ID especificado.</returns>        
-        [HttpPost("ViewUserById/{id}")]
+        [HttpGet("ViewUserById/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [Authorize(Roles = "super,admin")]
+        //[Authorize(Roles = "super,admin")]
         public async Task<IActionResult> GetUserByIdAsync(int id)
         {
             return Ok(await _service.GetUserByIdAsync(id));              
+        }
+
+        [HttpGet("ViewUserByEmail/{email}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        //[Authorize(Roles = "super,admin")]
+        public async Task<IActionResult> GetUserByEmailAsync(string email)
+        {
+            return Ok(await _service.GetUserByEmailAsync(email));
         }
         /// <summary>
         /// Registra um novo usuário Admin com autorização de um usuário Super ou Admin.
@@ -75,7 +84,7 @@ namespace AppGym.Controllers
         [HttpPost("RegisterSpecialUserSuper")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [Authorize(Roles = "super")]
+        //[Authorize(Roles = "super")]
         /// <summary>
         /// Registra um novo usuário Super com autorização somente para outro Super.
         /// </summary>

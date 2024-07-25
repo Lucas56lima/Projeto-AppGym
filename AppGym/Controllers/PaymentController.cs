@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.Interface;
-using Microsoft.AspNetCore.Authorization;
+using Domain.Viewmodel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppGym.Controllers
@@ -22,9 +22,9 @@ namespace AppGym.Controllers
     /// </summary>
     /// <param name="user">Os dados do usuário a serem registrados.</param>
     /// <returns>O usuário recém-registrado.</returns>
-    public async Task<IActionResult> PostPaymentAsync([FromBody]Payment payment, string email, string planName)
+    public async Task<IActionResult> PostPaymentAsync([FromBody]Payment payment, PaymentViewModel paymentViewModel)
         {
-            return Ok(await _service.PostPaymentAsync(payment, email, planName));
+            return Ok(await _service.PostPaymentAsync(payment, paymentViewModel));
         }
     }
 }

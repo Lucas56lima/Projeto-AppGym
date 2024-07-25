@@ -694,3 +694,5 @@ C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.pdb
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\AppGym.genruntimeconfig.cache
 C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\obj\Debug\net8.0\ref\AppGym.dll
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Usuário\Source\Repos\Lucas56lima\Project-AppGym\AppGym\bin\Debug\net8.0\Stripe.net.dll

@@ -1,5 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Interface;
+using Stripe;
+using Plan = Domain.Entities.Plan;
 
 namespace Service.Services
 {
@@ -27,14 +29,41 @@ namespace Service.Services
 
         public async Task<Plan?> PostPlanAsync(Plan plan)
         {
-            var planDb = await _planRepository.GetPlanByNameAsync(plan.Name);
-            if (planDb == null)
-            {               
-                return await _planRepository.PostPlanAsync(plan);
-            }
-            else
+            try
             {
-                Console.WriteLine("Plano já cadastrado!");
+                var planDb = await _planRepository.GetPlanByNameAsync(plan.Name);
+                if (planDb == null)
+                {
+                    var productOptions = new ProductCreateOptions()
+                    {
+                        Name = plan.Name,
+                    };
+                    var productService = new ProductService();
+                    var product = await productService.CreateAsync(productOptions);
+
+                    var priceOptions = new PriceCreateOptions()
+                    {
+                        UnitAmount = (long)plan.Value * 100, // Garantir que UnitAmount é long
+                        Currency = "brl",
+                        Recurring = new PriceRecurringOptions()
+                        {
+                            Interval = "month",
+                        },
+                        Product = product.Id,
+                    };
+                    var priceService = new PriceService();
+                    var price = await priceService.CreateAsync(priceOptions);
+                    return await _planRepository.PostPlanAsync(plan);
+                }
+                else
+                {
+                    Console.WriteLine("Plano já cadastrado!");
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao processar o plano: {ex.Message}");
                 return null;
             }
         }
